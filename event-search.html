@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>イベント検索</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/event-search.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>イベント検索</h1>
+        </div>
+        <div class="primary">
+            <div class="inner">
+                <div class="search">
+                    <div class="keyword search-item">
+                        <div class="table_title">
+                            <p>キーワード</p>
+                        </div>
+                        <!-- table_title -->
+                        <div class="table_summary">
+                            <input type="text" class="text text-big">
+                        </div>
+                        <!-- table_summary -->
+                    </div>
+                    <!-- keyword -->
+                    <div class="tag search-item">
+                        <div class="table_title">
+                            <p>タグ</p>
+                        </div>
+                        <!-- table_title -->
+                        <div class="table_summary">
+                            <input type="text" class="text text-big">
+                        </div>
+                    </div>
+                    <!-- tag -->
+                    <div class="event-date search-item">
+                        <div class="table_title">
+                            <p>開催日</p>
+                        </div>
+                        <!-- table_title -->
+                        <div class="table_summary">
+                            <div class="flex">
+                                <input type="text" class="text">
+                                <p>～</p>
+                                <input type="text" class="text">
+                            </div>
+                            <!-- flex -->
+                        </div>
+                        <!-- table_summary -->
+                    </div>
+                    <!-- event-date -->
+                    <div class="refine">
+                        <div class="refine-title">
+                            <h2>絞り込み</h2>
+                            <i class="fa fa-caret-down fa-2x js-active" aria-hidden="true"></i>
+                        </div>
+                        <div class="refine-item">
+                            <div class="field">
+                                <div class="refine-summary">
+                                    <h3>分野</h3>
+                                </div>
+                                <!-- refine-title -->
+                                <div class="refine-list">
+                                    <div class="field-item">
+                                        <input type="radio" name="field">
+                                        <p class="it">IT</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="field-item">
+                                        <input type="radio" name="field">
+                                        <p>ゲーム</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="field-item">
+                                        <input type="radio" name="field">
+                                        <p>デザイン</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="field-item">
+                                        <input type="radio" name="field">
+                                        <p>その他</p>
+                                    </div>
+                                    <!-- field-item -->
+                                </div>
+                                <!-- refine-list -->
+                            </div>
+                            <!-- field -->
+                        </div>
+                        <!-- refine-item -->
+                    </div>
+                </div>
+                <!-- search -->
+            </div>
+            <!-- inner -->
+        </div>
+        <!-- primary -->
+    </div>
+    <!-- wrapper -->
+
+    <script type="text/javascript">
+        $(function() {
+            $('.refine-item').hide();
+            $(".js-active").click(function() {
+                $('.refine-item').slideToggle("normal");
+                if ($(this).hasClass('fa-caret-down')) {
+                    $(this).removeClass('fa-caret-down');
+                    $(this).addClass('fa-caret-up');
+                } else {
+                    $(this).addClass('fa-caret-down');
+                    $(this).removeClass('fa-caret-up');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

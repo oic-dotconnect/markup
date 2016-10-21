@@ -1,0 +1,68 @@
+/* イベント検索 */
+
+h3 {
+    margin: 0;
+}
+
+.flex p {
+    margin: 10px 20px;
+}
+
+.primary {
+    box-shadow: none;
+}
+
+.inner {
+    margin: 20px 0;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.table_title {
+    display: flex;
+    align-items: center;
+}
+
+.table_summary {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.refine-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.refine-title h2 {
+    margin-right: 20px;
+}
+
+.refine-item {
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+
+.refine-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.field-item {
+    display: flex;
+    margin: 0 14px;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.it {
+    margin: 14px 0;
+}
