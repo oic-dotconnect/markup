@@ -1,0 +1,281 @@
+/* イベント詳細 */
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background: red;
+}
+
+
+/* 中央　詳細部分 */
+
+.detail {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px 0;
+    background-color: white;
+    flex-direction: column;
+}
+
+
+/* 分野　イベント名 */
+
+.heading {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.field {
+    display: flex;
+    width: calc(20vmin - 60px);
+    height: calc(15vmin - 60px);
+    margin: auto;
+    background: indianred;
+    align-items: center;
+}
+
+.field p {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+
+/* イベント内容 */
+
+
+/* tableの設定 */
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table_title {
+    width: 20%;
+    text-align: left;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.table_title p {
+    font-size: 1.5rem;
+}
+
+.table_summary {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.table_summary p {
+    float: left;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+
+/* 募集内容 */
+
+.recruitment-table {
+    margin-top: 50px;
+}
+
+.recritment-title {
+    overflow: hidden;
+}
+
+.recritment-start,
+.recritment-end {
+    overflow: hidden;
+}
+
+
+/* 申し込みボタン */
+
+.subscription {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.subscription button {
+    padding: 10px 70px;
+    margin: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: darkorange;
+    box-shadow: 0px 0px 6px 1px #000000;
+}
+
+
+/* 下部　説明　参加者一覧 */
+
+.secondary {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* 説明蘭 */
+
+.description {
+    width: 78%;
+    padding: 0 20px;
+    margin: 20px 10px 20px 0;
+    background-color: white;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+}
+
+
+/* 参加者　補欠者一覧 */
+
+.person-group {
+    display: flex;
+    width: 22%;
+    margin: 20px 0 20px 10px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.person-group .person {
+    border-bottom: 2px dashed #f1f1f1;
+    padding: 0 10px;
+}
+
+.person {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.person p {
+    margin-right: 20px
+}
+
+.participant-title,
+.substitate-title {
+    display: flex;
+    padding: 0 10px;
+    background: #f1f1f1;
+    flex-direction: row;
+}
+
+.list-title {
+    font-weight: 600;
+}
+
+.amount {
+    margin-left: auto;
+}
+
+
+/* もっとみる */
+
+.more {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.more button {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+
+/* 980px以下 */
+
+@media screen and (max-width: 980px) {
+    .wrapper {
+        max-width: 980px;
+    }
+}
+
+
+/* 568px以下 スマホ */
+
+@media screen and (max-width: 568px) {
+    .none {
+        display: none;
+    }
+    .heading {
+        display: flex;
+        order: 0;
+        flex-direction: column;
+    }
+    .detail-table {
+        order: 2;
+    }
+    .recruitment-table {
+        order: 3;
+    }
+    .subscription {
+        order: 1;
+    }
+    .title {
+        padding: 0;
+    }
+    .title p {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+    .field {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+    }
+    .field p {
+        padding: 10px 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+    .subscription button {
+        margin: 30px auto 10px;
+    }
+    .description {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .person-group {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+/* 375px以下 i6 */
+
+@media screen and (max-width: 375px) {
+    .detail-table p {
+        font-size: 1.5rem;
+    }
+    .recruitment-table p {
+        font-size: 1.5rem;
+    }
+    .person-group {
+        font-size: 1.5rem;
+    }
+}

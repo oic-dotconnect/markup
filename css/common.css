@@ -1,0 +1,86 @@
+/* 共通 */
+
+body {
+    background: lightgray;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px auto;
+    background: white;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+}
+
+.top {
+    width: 100%;
+    background: white;
+}
+
+.top h1 {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 3px solid black;
+}
+
+.primary {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+}
+
+.secondary {
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/* 768px以下 */
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+    }
+    .field {
+        width: calc(25vmin - 60px);
+        height: calc(18vmin - 60px);
+    }
+}
+
+
+/* 568px以下 */
+
+@media screen and (max-width: 568px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    .primary {
+        width: 100%;
+        margin: 0;
+    }
+    .secondary {
+        width: 100%;
+        flex-direction: column;
+    }
+    .table {
+        border-top: 1px solid #999;
+    }
+    .table_title {
+        display: block;
+        padding: 0 10px;
+    }
+    .table_summary {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        width: 100%;
+    }
+}
