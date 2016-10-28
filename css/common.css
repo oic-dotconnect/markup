@@ -1,19 +1,80 @@
 /* 共通 */
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     background: lightgray;
+    font-family: Helvetica, "游ゴシック", "Yu Gothic", sans-serif;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+/* input要素に対する指定 */
+
+.text {
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-indent: 15px;
+}
+
+.text-big {
+    width: 80%;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* 大枠の設定 この中に要素を追加していく*/
 
 .wrapper {
     display: flex;
-    max-width: 960px;
+    max-width: 1060px;
     width: 100%;
     padding: 0 20px;
     margin: 20px auto;
     background: white;
     flex-direction: column;
     box-shadow: 0px 0px 6px 1px #e6e6e6;
+    box-sizing: border-box;
 }
+
+
+/* 最上部　タイトル部分 */
 
 .top {
     width: 100%;
@@ -26,6 +87,9 @@ body {
     border-bottom: 3px solid black;
 }
 
+
+/* メイン部分 */
+
 .primary {
     display: flex;
     width: 90%;
@@ -33,13 +97,58 @@ body {
     box-shadow: 0px 0px 6px 1px #e6e6e6;
 }
 
+
+/* メイン部分　中 */
+
+.inner {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px 0;
+    background-color: white;
+    flex-direction: column;
+}
+
+
+/* 補足部分 */
+
 .secondary {
+    display: flex;
+    flex-direction: row;
     width: 90%;
     margin: 0 auto 30px;
 }
 
-p {
-    margin: 10px 0;
+
+/* tableの設定 */
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table_title {
+    width: 20%;
+    text-align: left;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.table_title p {
+    font-size: 1.4rem;
+}
+
+.table_summary {
+    width: 82%;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.table_summary p {
+    float: left;
+    font-size: 1.2rem;
+    margin-right: 20px;
 }
 
 
@@ -53,6 +162,12 @@ p {
         width: calc(25vmin - 60px);
         height: calc(18vmin - 60px);
     }
+    .table {
+        width: 100%;
+    }
+    .table_title {
+        width: 20%;
+    }
 }
 
 
@@ -60,6 +175,7 @@ p {
 
 @media screen and (max-width: 568px) {
     .wrapper {
+        max-width: 568px;
         padding: 0 10px;
     }
     .primary {
@@ -75,12 +191,22 @@ p {
     }
     .table_title {
         display: block;
+        width: 100%;
         padding: 0 10px;
+    }
+    .table_title p {
+        font-weight: 500;
     }
     .table_summary {
         display: block;
         border-top: none;
         border-bottom: none;
         width: 100%;
+    }
+}
+
+@media screen and(max-width:320px) {
+    .wrapper {
+        max-width: 320px;
     }
 }

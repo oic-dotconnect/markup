@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>イベント検索</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/event-search.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>イベント検索</h1>
+        </div>
+        <div class="primary">
+            <div class="inner">
+                <div class="search">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="table_title">キーワード</th>
+                                <td class="table_summary"><input type="text" class="text text-big"></td>
+                            </tr>
+                            <tr>
+                                <th class="table_title">タグ</th>
+                                <td class="table_summary"><input type="text" class="text text-big"></td>
+                            </tr>
+                            <tr>
+                                <th class="table_title">開催日</th>
+                                <td class="table_summary">
+                                    <div class="flex">
+                                        <input type="text" class="text">
+                                        <p>～</p>
+                                        <input type="text" class="text">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="refine">
+                        <div class="refine-title">
+                            <h3>絞り込み</h3>
+                            <i class="fa fa-caret-down fa-2x js-show" aria-hidden="true"></i>
+                        </div>
+                        <div class="js-active">
+                            <div class="field">
+                                <div class="refine-summary">
+                                    <h4>分野</h4>
+                                </div>
+                                <!-- refine-title -->
+                                <div class="refine-list">
+                                    <div class="refine-item">
+                                        <input type="radio" name="field">
+                                        <p>IT</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="field">
+                                        <p>ゲーム</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="field">
+                                        <p>デザイン</p>
+                                    </div>
+                                    <!-- field-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="field">
+                                        <p>その他</p>
+                                    </div>
+                                    <!-- field-item -->
+                                </div>
+                                <!-- refine-list -->
+                            </div>
+                            <!-- field -->
+                            <div class="event-state">
+                                <div class="refine-summary">
+                                    <h4>イベント状態</h4>
+                                </div>
+                                <!-- refine-summary -->
+                                <div class="refine-list">
+                                    <div class="refine-item">
+                                        <input type="radio" name="event-state">
+                                        <p>参加可能</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="event-state">
+                                        <p>開催前</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="event-state">
+                                        <p>終了</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                </div>
+                                <!-- refine-list -->
+                            </div>
+                            <!-- event-state -->
+                            <div class="sort">
+                                <div class="refine-summary">
+                                    <h4>並び替え</h4>
+                                </div>
+                                <!-- refine-summary -->
+                                <div class="refine-list">
+                                    <div class="refine-item">
+                                        <input type="radio" name="sort">
+                                        <p>登録日が新しい順</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="sort">
+                                        <p>登録日が古い順</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                    <div class="refine-item">
+                                        <input type="radio" name="sort">
+                                        <p>開催日が近い順</p>
+                                    </div>
+                                    <!-- refine-item -->
+                                </div>
+                                <!-- refine-list -->
+                            </div>
+                            <!-- sort -->
+                        </div>
+                        <!-- refine-item -->
+                    </div>
+                    <!-- refine -->
+                    <div class="search-btn">
+                        <button type="button"><p>検索</p></button>
+                    </div>
+                    <!-- search-btn -->
+                </div>
+                <!-- search -->
+            </div>
+            <!-- inner -->
+        </div>
+        <!-- primary -->
+        <div class="secondary">
+            <div class="inner">
+                <div class="search-result">
+                    <ul class="result-list">
+                        <li class="result-item">
+                            <div class="result-date">
+                                <p>2016年/10月</p>
+                                <p class="date">26(火)</p>
+                                <p>10:00~12:00</p>
+                            </div>
+                            <!-- result-date -->
+                            <div class="result-state">
+                                <span class="result-field"><p>分野</p></span>
+                                <p class="state">状態</p>
+                            </div>
+                            <!-- result-state -->
+                            <div class="result-detail">
+                                <h3 class="event-name">イベント名</h3>
+                                <p class="tag">タグ</p>
+                                <div class="result-group">
+                                    <p class="organizer">主催者</p>
+                                    <p class="capacity">現在　/　最大　人</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- result-item -->
+                    </ul>
+                    <!-- result-list -->
+                </div>
+                <!-- search-result -->
+            </div>
+        </div>
+        <!-- secondary -->
+    </div>
+    <!-- wrapper -->
+
+    <script type="text/javascript">
+        $(function() {
+            $(document).ready(function() {
+                $('.js-active').hide();
+                $(".js-show").click(function() {
+                    $('.js-active').slideToggle("normal");
+                    if ($(this).hasClass('fa-caret-down')) {
+                        $(this).removeClass('fa-caret-down');
+                        $(this).addClass('fa-caret-up');
+                    } else {
+                        $(this).addClass('fa-caret-down');
+                        $(this).removeClass('fa-caret-up');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
