@@ -42,9 +42,6 @@
 }
 
 
-/* イベント内容 */
-
-
 /* 募集内容 */
 
 .recruitment-table {
@@ -150,6 +147,15 @@
 .fa-color {
     color: #767676;
     ;
+}
+
+
+/* 768px以下 */
+
+@media screen and (max-width: 768px) {
+    .field p {
+        font-size: 1.4rem;
+    }
 }
 
 

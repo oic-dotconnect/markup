@@ -1,13 +1,39 @@
 /* 共通 */
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     background: lightgray;
     font-family: Helvetica, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-button {
-    -webkit-appearance: none;
-    border: 1px solid #ccc;
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 
@@ -21,7 +47,7 @@ button {
 }
 
 .text-big {
-    width: 50%;
+    width: 80%;
 }
 
 p {
@@ -103,14 +129,14 @@ p {
 }
 
 .table_title {
-    width: 17%;
+    width: 20%;
     text-align: left;
     padding: 0 10px;
     vertical-align: middle;
 }
 
 .table_title p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .table_summary {
@@ -136,8 +162,11 @@ p {
         width: calc(25vmin - 60px);
         height: calc(18vmin - 60px);
     }
-    .table_title {
+    .table {
         width: 100%;
+    }
+    .table_title {
+        width: 20%;
     }
 }
 
@@ -146,6 +175,7 @@ p {
 
 @media screen and (max-width: 568px) {
     .wrapper {
+        max-width: 568px;
         padding: 0 10px;
     }
     .primary {
@@ -161,6 +191,7 @@ p {
     }
     .table_title {
         display: block;
+        width: 100%;
         padding: 0 10px;
     }
     .table_title p {
@@ -171,5 +202,11 @@ p {
         border-top: none;
         border-bottom: none;
         width: 100%;
+    }
+}
+
+@media screen and(max-width:320px) {
+    .wrapper {
+        max-width: 320px;
     }
 }
