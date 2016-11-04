@@ -1,0 +1,36 @@
+/*お気に入りタグ*/
+
+
+.primary{
+  flex-direction:         column;
+  margin: 30px 50px;
+  box-shadow: none;
+}
+
+
+
+.tag-list{
+display:flex;
+}
+.tag-item{
+    width: 25%;
+    border: 1px solid;
+    border-style: ridge;
+}
+
+.paging{
+    margin:  0 auto;
+}
+
+.selected{
+    border:1px solid;
+    border-style: ridge ridge none ridge;
+}
+.btn-group{
+  display: flex;
+  -webkit-justify-content: space-between;
+}
+.acount-config{
+  border: 1px solid;
+  border-style: none ridge ridge ridge;
+}
