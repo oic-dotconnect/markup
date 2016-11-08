@@ -1,0 +1,41 @@
+/*お気に入りタグ*/
+
+.primary {
+    flex-direction: column;
+    margin: 30px 50px;
+    box-shadow: none;
+}
+
+.type1 {
+    border: solid;
+    background-color: blue;
+}
+
+.type2 {
+    border: solid;
+    background-color: red;
+}
+
+.type3 {
+    border: solid;
+    background-color: green;
+}
+
+.paging {
+    margin: 0 auto;
+}
+
+.selected {
+    border: 1px solid;
+    border-style: ridge ridge none ridge;
+}
+
+.btn-group {
+    display: flex;
+    -webkit-justify-content: space-between;
+}
+
+.acount-config {
+    border: 1px solid;
+    border-style: ridge;
+}

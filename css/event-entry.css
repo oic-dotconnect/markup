@@ -1,0 +1,144 @@
+.primary {
+    margin-bottom: 30px;
+}
+
+.entry-form {
+    padding: 10px 20px;
+}
+
+.entry-input {
+    width: 40%;
+    padding: 10px 0;
+    text-indent: 19px;
+    font-size: 1.3rem;
+}
+
+.entry-item {
+    width: 30%;
+    padding: 10px 0;
+    text-indent: 9px;
+    font-size: 1.3rem;
+}
+
+.entry-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-item-date {
+    display: flex;
+    width: 25%;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.entry-item-date span {
+    margin: 0 20px 12px;
+}
+
+.entry-item-date span::before {
+    content: 'ー';
+    font-size: 1.5rem;
+}
+
+.entry-input-date {
+    width: 100%;
+    padding: 10px 0;
+    text-indent: 9px;
+    font-size: 1.3rem;
+}
+
+.entry-recruitment {
+    display: flex;
+    margin-top: 60px;
+}
+
+.entry-recruitment-group {
+    margin-left: 20px;
+}
+
+.entry-start-group {
+    display: flex;
+}
+
+.entry-start-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.start-date {
+    margin: 0 20px;
+    font-size: 1.3rem;
+}
+
+.entry-start-time {
+    display: flex;
+}
+
+.start-time {
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+.entry-end-group {
+    display: flex;
+    margin-top: 10px;
+}
+
+.entry-end-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.end-date {
+    margin: 0 20px;
+    font-size: 1.3rem;
+}
+
+.entry-end-time {
+    display: flex;
+}
+
+.end-time {
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+.entry-capcity {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.entry-capcity span {
+    display: flex;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.entry-capcity-input {
+    width: 20%;
+    margin-left: 20px;
+}
+
+.entry-description {
+    margin-top: 20px;
+}
+
+.entry-description-group {
+    display: flex;
+    justify-content: center;
+}
+
+.entry-description-radio {
+    display: flex;
+    margin-right: 40px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.entry-description-radio input {
+    margin-right: 10px;
+}
