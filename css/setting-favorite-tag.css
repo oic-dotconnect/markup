@@ -6,19 +6,24 @@
     box-shadow: none;
 }
 
-.type1 {
-    border: solid;
-    background-color: blue;
+.acount-config {
+    border: 1px solid;
+    border-style: none ridge ridge ridge;
 }
 
-.type2 {
-    border: solid;
-    background-color: red;
+.tag-list {
+    display: flex;
 }
 
-.type3 {
-    border: solid;
-    background-color: green;
+.tag-item {
+    width: 25%;
+    border: 1px solid;
+    border-style: ridge;
+}
+
+.wording-button {
+    margin: 0 auto;
+    padding: 50px 0px;
 }
 
 .paging {
@@ -33,9 +38,4 @@
 .btn-group {
     display: flex;
     -webkit-justify-content: space-between;
-}
-
-.acount-config {
-    border: 1px solid;
-    border-style: ridge;
 }
