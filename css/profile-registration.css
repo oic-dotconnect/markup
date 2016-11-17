@@ -9,6 +9,7 @@ body form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
+    align-items: center;
 }
 
 .item{
@@ -24,10 +25,6 @@ body form{
     box-shadow: 0px 0px 6px 1px #e6e6e6;
 }
 
-.register-form h2{
-  margin: 0 20px 0 0;
-}
-
 .register-form h3{
   margin: 0;
   padding: 10px 0 0 0;
@@ -36,7 +33,16 @@ body form{
 }
 
 .register-form input{
+  width: 80%;
+  margin-left:  10px;
+  border: thin solid;
   margin-bottom: 10px;
+}
+
+.register-form textarea{
+  width: 80%;
+  margin-left: 10px;
+  border: thin solid;
 }
 
 .register-form p{
@@ -45,32 +51,27 @@ body form{
   display: inline-block;
 }
 
-.from-icon-item h2{
-    margin: 0 0 10px 0;
-}
-
 .form-item {
   margin: 0 0 10px 0;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
 }
 
 .form-item p{ 
-  font-size: 0.5rem;
-  height: 10px;
-  border-style: solid;
+  font-size: 0.7rem;
+  color: red;
   align-items: baseline;
 }
 
 .form-icon{
   display: flex;
   flex-direction: row; 
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .form-icon .img{
-    margin-right: 10px;
+    margin: 0 10px;
     width: 100px;
     height: 100px;
     background: red;
@@ -86,7 +87,7 @@ body form{
   margin: 0 0 20px 0;
 }
 
-.tag_page_move{
+.form-tag-page{
   margin-bottom: 10px;
   display: flex;
   justify-content:center;
@@ -96,8 +97,34 @@ body form{
   margin-bottom: 10px; 
 }
 
-.cont{
+.form-cont{
   margin-bottom: 10px;
   display: flex;
   justify-content:space-between; 
+}
+
+.fa-arrow-right:before {
+content: "\f061";
+}
+
+/* 568px以下 */
+@media screen and (max-width: 568px) {
+  .wrapper{
+    display: flex;
+    justify-content:center; 
+  }
+  .item{ 
+   padding: 5px 10px;
+  }
+  .register-form input{
+    margin-left: 0;
+    width: 100%;
+  }
+  .form-icon .img{
+    margin-left: 0;
+  }
+  .register-form textarea {
+    width: 100%;
+    margin-left: 0;
+  }
 }
