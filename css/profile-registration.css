@@ -20,8 +20,8 @@ body form{
 .register-form{
     display: flex;
     flex-direction:column;
-    margin: 10px;
     padding: 30px;
+       border-radius: 5px;
     box-shadow: 0px 0px 6px 1px #e6e6e6;
 }
 
@@ -123,8 +123,9 @@ content: "\f061";
   .form-icon .img{
     margin-left: 0;
   }
-  .register-form textarea {
+  .register-form textarea{
     width: 100%;
     margin-left: 0;
   }
+
 }
