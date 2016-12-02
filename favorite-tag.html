@@ -10,15 +10,55 @@
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/favorite-tag.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/profile.css">
+      <link rel="stylesheet" href="./css/profile-registration.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="top">
-            <h1>アカウント登録</h1>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
         </div>
-        <!-- top -->
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+  <div class = "wrapper">
+    <div class = "register-step">
+      <div class = "item">
+        プロフィール登録
+      </div>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+      <div class = "item active">
+        お気に入りタグ登録
+      </div>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <div class = "item">
+        確認
+      </div>      
+    </div>
+    <div class = "col register-form">
+      <h2>お気に入りタグ登録</h2>
+      <div class="row search">
+        
+      </div>
         <div class="state">
             <span class="type1">プロフィール登録</span>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>

@@ -5,7 +5,7 @@ body form{
 
 .register-step{
     width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
@@ -13,8 +13,20 @@ body form{
 }
 
 .item{
+    flex: 1;
+    text-align: center;
     padding: 10px 40px;
     box-shadow: 0px 0px 6px 1px #e6e6e6;
+    color: white;
+    background: #54C3F1;
+    border-radius: 5px;
+    border: solid 1.2px #187FC4;
+    text-shadow: 5px 1px 3px rgba(0,,0,0.5);
+}
+
+.fa{
+  flex: 0.5;
+      text-align: center;
 }
 
 .register-form{
@@ -72,6 +84,7 @@ content: "\f061";
 .caution-mark {
   margin: 0;
   margin-top: 5px;
+  padding-left: 15px;
   font-size: 0.8rem;
   color: red;
 }
