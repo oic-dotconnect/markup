@@ -1,6 +1,6 @@
 /* 共通 */
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -10,12 +10,25 @@ body {
     font-family: Helvetica, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 ul {
     padding: 0;
     margin: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -28,13 +41,8 @@ td {
     padding: 0;
 }
 
-h3 {
-    margin: 0;
-}
-
-h4 {
-    margin: 0;
-    font-size: 1.2rem;
+input {
+    border: 1px solid;
 }
 
 
@@ -126,6 +134,15 @@ h1.form-title{
     flex-direction: row;
     width: 90%;
     margin: 0 auto 30px;
+}
+
+
+/* form-header */
+
+h2.form-header {
+    margin: 10px 0;
+    padding-left: 5px;
+    font-size: 1.3rem;
 }
 
 
@@ -338,6 +355,12 @@ h1.form-title{
         border-top: none;
         border-bottom: none;
         width: 100%;
+    }
+}
+
+@media screen and(max-width:375) {
+    .wrapper {
+        max-width: 375px;
     }
 }
 

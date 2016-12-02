@@ -1,0 +1,37 @@
+/*退会申請*/
+
+.primary{
+  flex-direction:         column;
+  margin: 30px 50px;
+  box-shadow: none;
+}
+
+.acount-config{
+  border: 1px solid;
+  border-style: none ridge ridge ridge;
+}
+
+.tag-list{
+display:flex;
+}
+.tag-item{
+    width: 25%;
+    border: 1px solid;
+    border-style: ridge;
+}
+.wording{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.wording-button{
+    margin:  0 auto;
+padding: 50px 0px;
+}
+.paging{
+    margin:  0 auto;
+}
+
+.selected{
+    border:1px solid;
+    border-style: ridge ridge none ridge;
+}
