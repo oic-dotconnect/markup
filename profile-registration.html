@@ -7,13 +7,36 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/event-detail.css">
   <link rel="stylesheet" href="./css/profile-registration.css">
+  <link rel="stylesheet" href="./css/profile.css">
   <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
   <div class = "wrapper">
-  	<div class = "top">
-      <h1>タイトル</h1>
-    </div>
     <div class = "register-step">
       <div class = "item">
         項目１
@@ -27,54 +50,66 @@
         項目３
       </div>      
     </div>
-    <div class = "register-form">
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2 class = "form-header">ニックネーム</h2>
-          <p>必須</p>
-        </div>
-          <input type = "text" name = "name_input" >
-          <div class = "note">
-            <p>※ 文言</p>
+    <div class = "col register-form">
+        <h1 class = "form-title">プロフィール登録</h1>
+        <div class="row">
+         <div class="col icon-col">
+         <div class="name-title">
+            <h2>アイコン</h2>
           </div>
-      </div>
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2>ユーザコード</h2><p>必須</p>
-        </div>
-          <input type = "text" name = "user_code_input" >
-      </div>
-      <div class = "form-cat">
-        <div class = "form-icon-item">
-          <h2>アイコン</h2>
-        </div>
-        <div class = "form-icon">
-            <div class = "img"></div>
-            <button type="button">参照</button>
+          <div class="icon-display">
+            <img src="http://placeimg.com/300/300/animals" alt="">
           </div>
-      </div>
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2>紹介文</h2>
+          <div class="icon-form">
+          <label for="icon-file">
+          ＋  画像を選択
+            <input type="file" id="icon-file" style="display:none;">
+          </label>
+          </div>
+         </div>         
+         <div class="col name-col">
+           <div class="user-name">
+            <div class="name-title">
+              <h2>ニックネーム</h2><p>必須</p>
+            </div>
+            <div class="name-input">
+              <input type="text" class="border form-input">
+              <div class="caution">
+                <p class="caution-mark">※文言</p>
+                <p class="caution-mark">※文言</p>
+                <p class="caution-mark">※文言</p>   
+              </div>
+            </div>
+           </div>
+           <div class="col user-code">
+              <div class="name-title">
+                <h2>ユーザコード</h2><p>必須</p>
+              </div>
+            <div class="code-input">
+              <input type="text" class="border form-input ">
+            </div>
+           </div>
+         </div>
+       </div>
+       <div class="col introduction">
+       <div class="name-title">
+        <h2>紹介文</h2>
         </div>
-        <textarea name="into" rows="10" cols="60">ここに感想を記入してください。</textarea>
-      </div>
-      <div class = "form-tag-page">
-        <button type="button">
-          お気に入りページへ
-        </button>
-      </div>
-      <div class = "note">
-        <p>※ 文言</p>
-      </div>
-      <div class = "form-cont">
-        <div class = "cont_conf">
-          <button type="button">キャンセル</button>
+        <div class="introduction-input">
+          <textarea class="border" rows="10" cols="60"></textarea>  
         </div>
-        <div class = "cont_can">
-          <button type="button">確認</button>
+       </div>
+       <div class="col info">
+       <div class="fav">
+        <input type="button" value="お気に入りタグ登録ページへ" class="fav-register">
+        <p class="caution-mark">※文言</p>
         </div>
-      </div>
+          <div class="row info">
+         <input type="button" value="キャンセル" class="cancell">
+         <input type="button" value="確認" class="conf">
+         </div>
+          </div>
+        </div>
     </div>
 </body>
 </html>

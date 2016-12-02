@@ -39,6 +39,10 @@ h4 {
 
 
 /* input要素に対する指定 */
+input.border,textarea.border{
+    border: solid 1px #aab2bd;
+}
+
 
 .text {
     width: 30%;
@@ -86,6 +90,10 @@ p {
     width: 100%;
     padding: 10px 0;
     border-bottom: 3px solid black;
+}
+
+h1.form-title{
+    margin: 0;
 }
 
 
@@ -155,11 +163,12 @@ p {
 .row{
     display: flex;
     flex-direction:row;
-}
+    }
 
 .col{
     display: flex;
     flex-direction:column;
+    margin-top: 20px;
 }
 
 #header {
