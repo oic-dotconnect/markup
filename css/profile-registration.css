@@ -3,8 +3,17 @@ body form{
   vertical-align:baseline;
 }
 
+.row{
+  margin-top: 20px;
+}
+
+.register-form h2
+{
+  padding-left: 5px;
+}
+
 .register-step{
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
@@ -13,35 +22,25 @@ body form{
 }
 
 .item{
-    flex: 1;
+    flex: 2;
     text-align: center;
-    padding: 10px 40px;
+    padding: 20px 10px;
     box-shadow: 0px 0px 6px 1px #e6e6e6;
-    color: white;
-    background: #54C3F1;
     border-radius: 5px;
     border: solid 1.2px #187FC4;
+    font-weight: bold;
+    font-size: 1rem;
     text-shadow: 5px 1px 3px rgba(0,,0,0.5);
+}
+
+.item.active{
+  color: white; 
+  background: #54C3F1;
 }
 
 .fa{
   flex: 0.5;
-      text-align: center;
-}
-
-.register-form{
-    display: flex;
-    flex-direction:column;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px 1px #e6e6e6;
-}
-
-.register-form h3{
-  margin: 0;
-  padding: 10px 0 0 0;
-  display: inline-block;
-  float: left;
+  text-align: center;
 }
 
 .form-item {
@@ -63,22 +62,31 @@ body form{
   align-items: flex-end;
 }
 
-.form-detail{
-  width: 100%;
+.icon-form{
+  margin-top: auto;
 }
-
-.register-form h2
-{
-  margin-top:3px;
-  margin-bottom: 0;
-}
-
 .fa-arrow-right:before {
 content: "\f061";
 }
 
+.icon-col{
+  padding-right: 0 50px;
+}
+
+.icon-form{
+  margin-top: auto;
+}
+
+.user-code{
+  margin-top: 30px;
+}
+
 .fav{
   text-align: center;
+}
+
+.caution{
+  padding-bottom: 20px;
 }
 
 .caution-mark {
@@ -89,7 +97,14 @@ content: "\f061";
   color: red;
 }
 
-/* 568px以下 */
+@media screen and (max-width: 768px) {
+  .item{
+    font-size: 0.8rem;
+    flex: 3;
+  }
+}
+
+/* 568pxä»¥ä¸‹ */
 @media screen and (max-width: 568px) {
   .wrapper{
     display: flex;
@@ -107,7 +122,6 @@ content: "\f061";
   }
   .register-form textarea{
     width: 100%;
-    margin-left: 0;
   }
 
 }

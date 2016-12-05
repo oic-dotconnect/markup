@@ -1,5 +1,8 @@
 .register-form{
   margin-top: 0; 
+  box-shadow: 0px 0px 6px 1px #e6e6e6;
+  border-radius: 5px;
+  padding:30px 50px ;
 }
 
 .name-col{       
@@ -11,7 +14,6 @@
   flex: 2;
   padding: 0 20px;
    text-align: center;
-
 }
 
 .icon-display{
@@ -27,9 +29,6 @@
   border: solid 5px #d3d3d3;
 }
 
-.icon-form{
-  margin-top: 20px;
-}
 
 .icon-form input button{
     background: #EEE;
@@ -103,8 +102,7 @@
 
 
 
-.introduction{
-  
+.introduction{  
   padding: 0 20px;
 }
 
@@ -129,7 +127,7 @@
 
 .conf {
  width: 100px;
- background: #187FC4;
+ background: #F6AD3C;
 }
 
 .cancell {
@@ -138,7 +136,7 @@
 }
 
 .fav-register{
-      background: #F6AD3C;
+      background: #00AFEC;
        width: 300px;
 }
 
