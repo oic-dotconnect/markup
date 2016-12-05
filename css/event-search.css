@@ -1,13 +1,4 @@
 /* イベント検索 */
-
-.flex {
-    align-items: center;
-}
-
-.flex p {
-    margin: 10px 20px;
-}
-
 .primary {
     box-shadow: none;
 }
@@ -26,32 +17,6 @@
     box-sizing: border-box;
 }
 
-.table_title {
-    width: 25%;
-    font-size: 1.4rem;
-}
-
-.table_summary {
-    width: 75%;
-    padding: 10px 0;
-}
-
-.refine-title {
-    display: flex;
-    margin-left: 20px;
-    flex-direction: row;
-    align-items: center;
-}
-
-.js-active {
-    padding: 15px 30px 0;
-}
-
-.refine-title h3 {
-    margin-right: 20px;
-    font-size: 1.3rem;
-}
-
 .refine-list {
     display: flex;
     flex-direction: row;
@@ -63,10 +28,6 @@
     font-size: 1.2rem;
     flex-direction: row;
     align-items: center;
-}
-
-.refine-item p {
-    margin-left: 10px;
 }
 
 .search-btn {
@@ -81,71 +42,18 @@
     border: 1px solid;
 }
 
-.result-item {
+.search-result > div {
     display: flex;
-    width: 95%;
-    padding: 20px 15px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    box-shadow: 0px 0px 6px 1px #e6e6e6;
-    flex-direction: row;
 }
 
-.result-date {
-    display: flex;
-    width: 16%;
-    flex-direction: column;
-    justify-content: space-between;
+.result-list {
+    width: calc(100% - 200px)
 }
 
-.result-date p {
-    margin: 0;
+.result-controle {
+    width: 200px;
 }
 
-.result-state {
-    display: flex;
-    width: 15%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.date {
-    padding-left: 10px;
-    font-size: 1.5rem;
-}
-
-.result-field {
-    display: flex;
-    width: 90%;
-    height: 50%;
-    margin: 0 auto;
-    background: indianred;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.state {
-    width: 90%;
-    padding: 5px 0;
-    margin: 10px auto 0;
-    text-align: center;
-    border: 1px solid;
-    box-sizing: border-box;
-}
-
-.result-detail {
-    overflow: hidden;
-    display: flex;
-    width: 69%;
-    margin-left: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.result-detail p {
-    margin: 0;
-}
 
 .result-group {
     display: flex;
