@@ -3,59 +3,6 @@ body form{
   vertical-align:baseline;
 }
 
-.row{
-  margin-top: 20px;
-}
-
-.register-form h2
-{
-  padding-left: 5px;
-}
-
-.register-step{
-    width: 95%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
-    align-items: center;
-}
-
-.item{
-    flex: 2;
-    text-align: center;
-    padding: 20px 10px;
-    box-shadow: 0px 0px 6px 1px #e6e6e6;
-    border-radius: 5px;
-    border: solid 1.2px #187FC4;
-    font-weight: bold;
-    font-size: 1rem;
-    text-shadow: 5px 1px 3px rgba(0,,0,0.5);
-}
-
-.item.active{
-  color: white; 
-  background: #54C3F1;
-}
-
-.fa{
-  flex: 0.5;
-  text-align: center;
-}
-
-.form-item {
-  margin: 0 0 10px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.form-item p{ 
-  font-size: 0.7rem;
-  color: red;
-  align-items: baseline;
-}
-
 .form-icon{
   display: flex;
   flex-direction: row; 
@@ -63,10 +10,8 @@ body form{
 }
 
 .icon-form{
-  margin-top: auto;
-}
-.fa-arrow-right:before {
-content: "\f061";
+  margin-top: 20px;
+  text-align: center;
 }
 
 .icon-col{
@@ -79,6 +24,10 @@ content: "\f061";
 
 .user-code{
   margin-top: 30px;
+}
+
+.introduction{
+  padding-top: 20px;
 }
 
 .fav{
@@ -95,6 +44,17 @@ content: "\f061";
   padding-left: 15px;
   font-size: 0.8rem;
   color: red;
+}
+
+label{
+  color: white;  
+  background-color: #A40035;
+  padding: 6px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 5px rgba(0,0,0,0.85),0px 0px 5px rgba(0,0,0,1);
+  box-shadow: 2px 1px #0075A9;
+  letter-spacing: 5px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
