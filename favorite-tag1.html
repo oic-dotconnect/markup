@@ -1,0 +1,127 @@
+
+<html lang="ja">
+<head>
+  <title>お気に入りタグの登録</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <link rel="stylesheet" type="text/css" href="./css/favorite-tag1.css">
+  <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+  <div class = "col wrapper">
+    <div class = " row register-step">
+      <div class = "item">
+        プロフィール登録
+      </div>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+      <div class = "item active">
+        お気に入りタグ登録
+      </div>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <div class = "item">
+        確認
+      </div>      
+    </div>
+    <div class = "col register-form">
+      <h2>お気に入りタグ登録</h2>
+      <div class="row search">
+        <div class="mark">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="input">
+          <input type="text" class="form-input">
+          <input type="button" value="検索" class="search-button">
+        </div>
+      </div>
+      <div class="row list">
+        <div class="col tag-list">
+          <h3 class="name-title">
+            検索候補のタグの一覧
+          </h3>
+          <div class="candidate-tag-list">
+          <div class="col">
+           <ul class="row">
+             <li>
+               <input type="checkbox" name="piyo" value="a" checked id="checkbox01" />
+    <label for="checkbox01" class="checkbox">a</label>
+             <li>
+             <input type="checkbox" class="checkbox" />b</li>
+             <li>
+             <input type="checkbox" class="checkbox" />c</li>
+           </ul>
+          </div>
+          <div class="col">
+           <ul class="row">
+             <li>
+             <input type="checkbox" class="checkbox" />a</li>
+             <li>
+             <input type="checkbox" class="checkbox" />b</li>
+             <li>
+             <input type="checkbox" class="checkbox" />c</li>
+           </ul>
+          </div>
+          <div class="col">
+           <ul class="row">
+             <li>
+             <input type="checkbox" class="checkbox" />a</li>
+             <li>
+             <input type="checkbox" class="checkbox" />b</li>
+             <li>
+             <input type="checkbox" class="checkbox" />c</li>
+           </ul>
+          </div>
+        </div>
+        </div>
+        <div class="col tag-list">
+          <h3 class="name-title">
+            選択したタグの一覧
+          </h3>
+          <div class="selection-tag-list">
+            <div class="col">
+             <ul class="row">
+             <li>
+             <input type="checkbox" class="checkbox" />a</li>
+             <li>
+             <input type="checkbox" class="checkbox" />b</li>
+             <li>
+             <input type="checkbox" class="checkbox" />c</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row info">
+        <input type="button" value="キャンセル" class="cancell">
+         <input type="button" value="確認" class="conf">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
