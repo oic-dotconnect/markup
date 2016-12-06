@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
+    <!--<link href="css/normalize.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/event-entry.css">
 </head>
@@ -18,22 +18,21 @@
         <!-- div.top -->
         <div class="primary">
             <div class="inner">
-                <div class="entry-form">
+                <form class="event-entry-form">
                     <div class="entry-event-name">
                         <h2 class="form-header">イベント名</h2>
-                        <input class="entry-input" type="text">
+                        <input class="entry-input" type="text" style="width: 30em">
                     </div>
                     <!-- entry-form -->
                     <div class="entry-field">
                         <h2 class="form-header">分野</h2>
-                        <select class="entry-item">
-                            <option value="">選択してください</option>
-                            <option value="IT">IT</option>
-                            <option value="デザイン">デザイン</option>
-                            <option value="ゲーム">ゲーム</option>
-                            <option value="その他">その他</option>
-                        </select>
-                        <!-- input-entry-field entry-item -->
+                        <div>
+                            <input type="radio" name="field" id="field-it"><label for="field-it">IT</label>
+                            <input type="radio" name="field" id="field-game"><label for="field-game">ゲーム</label>
+                            <input type="radio" name="field" id="field-design"><label for="field-design">デザイン</label>
+                            <input type="radio" name="field" id="field-move"><label for="field-move">映像</label>                        
+                            <input type="radio" name="field" id="field-other"><label for="field-other">その他</label>
+                        </div>                                              
                     </div>
                     <!-- entry-field -->
                     <div class="entry-tag">
@@ -42,31 +41,18 @@
                     </div>
                     <!-- entry-tag -->
                     <div class="entry-date">
-                        <div class="entry-item-date">
-                            <div class="entry-date-group">
-                                <h2 class="form-header">開催日</h2>
-                                <input class="entry-input-date" type="text">
+                        <h2 class="form-header">開催日時</h2>
+                        <secton class="entry-date-date">
+                            <h3>開催日</h3>
+                            <input class="entry-input-date" type="date">
+                        </secton>
+                        <secton class="entry-date-time">
+                            <h3>開催時間</h3>
+                            <div class="">
+                                <input type="time">〜
+                                <input type="time">
                             </div>
-                        </div>
-                        <!-- entry-item-date -->
-                        <div class="entry-item-date">
-                            <span></span>
-                            <div class="entry-date-group">
-                                <h2 class="form-header">開始時間</h2>
-                                <input class="entry-input-date" type="text">
-                            </div>
-                            <!-- entry-date-group -->
-                        </div>
-                        <!-- entry-item-date -->
-                        <div class="entry-item-date">
-                            <span></span>
-                            <div class="entry-date-group">
-                                <h2 class="form-header">開始時間</h2>
-                                <input class="entry-input-date" type="text">
-                            </div>
-                            <!-- entry-date-group -->
-                        </div>
-                        <!-- entry-item-date -->
+                        </secton>                        
                     </div>
                     <!-- entry-date -->
                     <div class="entry-room">
@@ -81,44 +67,32 @@
                     <div class="entry-recruitment">
                         <h2 class="form-header">募集期間</h2>
                         <div class="entry-recruitment-group">
-                            <div class="entry-start-group">
-                                <div class="entry-start-date">
-                                    <h2 class="form-header">開始日</h2>
-                                    <input class="start-date" type="text">
+                            <section>
+                                <h3>開始日時</h3>
+                                <div>
+                                    <label for="">日付</label><input type="date">
+                                    <label for="">時間</label><input type="time">
                                 </div>
-                                <!-- entry-start-date -->
-                                <div class="entry-start-time">
-                                    <h2 class="form-header">開始時間</h2>
-                                    <input class="start-time" type="text">
+                            </section>
+                            <section>
+                                <h3>終了日時</h3>
+                                <div>
+                                    <label for="">日付</label><input type="date">
+                                    <label for="">時間</label><input type="time">
                                 </div>
-                                <!-- entry-start-time -->
-                            </div>
-                            <!-- entry-start-group -->
-                            <div class="entry-end-group">
-                                <div class="entry-end-date">
-                                    <h2 class="form-header">終了日</h2>
-                                    <input class="end-date" type="text">
-                                </div>
-                                <!-- entry-start-date -->
-                                <div class="entry-end-time">
-                                    <h2 class="form-header">終了時間</h2>
-                                    <input class="end-time" type="text">
-                                </div>
-                                <!-- entry-start-time -->
-                            </div>
-                            <!-- entry-start-group -->
+                            </section>                        
                         </div>
                         <!-- entry-recruitment-group -->
                     </div>
                     <!-- entry-recruitment -->
                     <div class="entry-capcity">
                         <h2 class="form-header">定員</h2>
-                        <input class="entry-input entry-capcity-input" type="text">
+                        <input max="100" min="1" type="number" style="width: 3em">
                         <span>人</span>
                     </div>
                     <!-- entry-capcity -->
                     <div class="entry-description">
-                        <h2 class="form-header">説明</h2>
+                        <h2 class="form-header">イベントの説明</h2>
                         <div class="entry-description-group">
                             <div class="entry-description-radio">
                                 <input type="radio" name="" value="">
@@ -133,11 +107,11 @@
                         </div>
                         <!-- entry-description-group -->
                         <div class="entry-description-aria">
-                            <input type="textaria">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <!-- entry-description -->
-                </div>
+                </form>
                 <!-- entry-from -->
             </div>
             <!-- inner -->

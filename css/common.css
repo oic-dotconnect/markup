@@ -4,24 +4,40 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}    
+
 body {
     margin: 0;
     background: lightgray;
     font-family: Helvetica, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h2 {
-    margin: 0;
+    font-size: 1.5rem;
 }
 
 h3 {
-    margin: 0;
+    font-size: 1.17rem;
 }
 
 h4 {
-    margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
+
+h5 {
+    font-size:0.83rem;
+}
+
+h6 {
+    font-size:0.67rem;
+}
+
 
 ul {
     padding: 0;
@@ -41,16 +57,14 @@ td {
     padding: 0;
 }
 
-input {
-    border: 1px solid;
+input, textarea {
+    border:solid 1px #aab2bd;
+    border-radius: 4px;
 }
 
-
-/* input要素に対する指定 */
-input.border,textarea.border{
-    border: solid 1px #aab2bd;
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0px;
 }
-
 
 .text {
     width: 30%;
@@ -133,18 +147,11 @@ h1.form-title{
     display: flex;
     flex-direction: row;
     width: 90%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
 }
 
 
 /* form-header */
-
-h2.form-header {
-    margin: 10px 0;
-    padding-left: 5px;
-    font-size: 1.3rem;
-}
-
 
 /* tableの設定 */
 
@@ -186,6 +193,12 @@ h2.form-header {
     display: flex;
     flex-direction:column;
     margin-top: 20px;
+}
+
+.button {
+    border:solid 1px #aab2bd;
+    border-radius: 4px;
+    color: #ffffff;
 }
 
 #header {
