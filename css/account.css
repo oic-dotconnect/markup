@@ -13,7 +13,6 @@
 .icon-col{
   flex: 2;
   padding: 0 20px;
-   text-align: center;
 }
 
 .icon-display{
@@ -28,7 +27,6 @@
   border-radius: 50%;
   border: solid 5px #d3d3d3;
 }
-
 
 .icon-form input button{
     background: #EEE;
@@ -49,6 +47,9 @@
   display: inline;
   font-size: small;
 }
+
+.name-title{
+  display: flex;
 }
 
 .name-title h2{
