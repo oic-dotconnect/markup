@@ -19,7 +19,7 @@
     Word-break: break-all;
     font-size: 1rem;
     width: 100px;
-    background: #F6AD3C;
+    background: #00A95F;
     width: 15%;
 }
 
@@ -33,16 +33,18 @@
   margin-right: 10px;
 }
 
-.name-title {
-  border-color: #A40000;
+.candidate-title .name-title {
+  border-color: #AC6A00;
+}
+.selection-title .name-title {
+  border-color: #B7AA00;
 }
 
 .tag-list{
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
   box-shadow: 0px 0px 6px 1px #e6e6e6;
   border-radius: 5px;
   padding:10px 30px 20px 30px;
-  flex: 1;
 }
 .candidate-tag-list{
   padding-left:10px;
@@ -50,29 +52,28 @@
 .selection-tag-list{
   padding-left: 10px;
 }
-.tag-list li {
-  margin-right: 20px;
-}
+
 .tag-list .row{
   margin-top: 0;
 }
 
+.tag-list li{
+  display: inline-block;
+}
+
 .checkbox {
+  margin:10px 10px 0 0;
   display: none;
   box-sizing: border-box;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   position: relative;
   display: inline-block;
-  margin: 0 20px 8px 0;
   padding: 12px 12px 12px 42px;
   border-radius: 8px;
   background-color: #f6f7f8;
   vertical-align: middle;
   cursor: pointer;
-}
-.checkbox:hover {
-  background-color: #e2edd7;
 }
 .checkbox:before {
   -webkit-transition: opacity 0.2s linear;
@@ -94,4 +95,8 @@
 }
 input[type=checkbox]:checked + .checkbox:before {
   opacity: 1;
+}
+
+input[type=checkbox]{
+ display: none; 
 }
