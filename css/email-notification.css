@@ -1,4 +1,4 @@
-/*退会申請*/
+/* メール通知*/
 
 .primary {
     flex-direction: column;
@@ -28,7 +28,7 @@
 
 .button-group {
     margin: 0 auto;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .paging {
@@ -38,4 +38,24 @@
 .selected {
     border: 1px solid;
     border-style: ridge ridge none ridge;
+}
+
+.selected-tag {
+    border: 1px solid;
+}
+
+.my-event {
+    margin: 0px 0px 50px 0px;
+}
+
+.my-event-ckbox {
+    padding: 0px 0px 0px 30px;
+}
+
+.favolite-tag {
+    margin: 0px 0px 50px 0px;
+}
+
+.favolite-tag-ckbox {
+    padding: 0px 0px 0px 30px;
 }

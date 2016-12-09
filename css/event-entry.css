@@ -142,3 +142,16 @@
 .entry-description-radio input {
     margin-right: 10px;
 }
+
+.deaft-button {}
+
+.deaft {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cansel-release {
+    display: flex;
+    justify-content: space-between;
+}

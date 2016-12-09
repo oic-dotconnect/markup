@@ -1,0 +1,77 @@
+/*イベント管理*/
+
+.edit-event {
+    display: flex;
+    flex-direction: row;
+}
+
+.event-status-button {
+    border: 1px solid red;
+    background-color: white;
+    width: 20%;
+}
+
+.event-status {
+    border: solid 2px;
+    width: 80%
+}
+
+.event-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.e-icon {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+}
+
+.event-icon {
+    width: 20%;
+}
+
+.event-info {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.event-button {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.end-event {
+    display: flex;
+    flex-direction: row;
+}
+
+.end-event-button {
+    background-color: white;
+    width: 20%;
+    border: 1px solid red;
+}
+
+.end-event-status {
+    border: 2px solid;
+    width: 80%;
+}
+
+.end-event-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.end-event-icon {
+    width: 20%;
+}
+
+.end-event-info {
+    width: 60%;
+}
+
+.delete-event-button {
+    width: 20%;
+}
