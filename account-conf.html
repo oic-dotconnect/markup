@@ -3,81 +3,119 @@
   <title>登録確認</title>
   <meta charset = "UTF-8">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/event-detail.css">
-  <link rel="stylesheet" href="./css/profile-registration.css">
+  <link rel="stylesheet" href="./css/account.css">
   <link rel="stylesheet" href="./css/account-conf.css">
   <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class = "wrapper">
-    <div class = "top">
-      <h1>タイトル</h1>
-    </div>
-    <div class = "register-step">
-      <div class = "item">
-        項目１
+  <header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+  <div class="wrapper">
+    <div class="register-step">
+      <div class="item">
+        プロフィール登録
       </div>
       <i class="fa fa-arrow-right" aria-hidden="true"></i> 
-      <div class = "item">
-        項目２
+      <div class="item">
+        お気に入りタグ登録
       </div>
       <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      <div class = "item">
-        項目３
+      <div class="item active">
+        確認
       </div>      
-    </div>
-    <div class="conf-messege">
+    </div>    
+    <div class="col register-conf">
+     <div class="conf-messege">
       以下のアカウント情報で登録します。
-    </div>
-    <div class = "register-form">
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2 class = "form-header">ニックネーム</h2>
-          <p class="form-info">puts</p>
+     </div>
+    <div class="col register-prof">
+        <h2 class="form-header">プロフィール</h2>
+        <div class="row">
+         <div class="col icon-col">
+         <div class="name-title">
+            <h2 class="form-header">アイコン</h2>
+          </div>
+          <div class="icon-display">
+            <img src="http://placeimg.com/300/300/animals" alt="">
+          </div>
+          <div class="icon-form">
+          </div>
+         </div>         
+         <div class="col name-col">
+           <div class="user-name">
+            <div class="name-title">
+              <h2 class="form-header">ニックネーム</h2>
+            </div>
+            <div class="name">
+              <p class="input-info">山田太郎</p>
+            </div>
+           </div>
+           <div class="col user-code">
+              <div class="name-title">
+                <h2 class="form-header">ユーザコード</h2>
+              </div>
+            <div class="code">
+              <p class="input-info">12121212121</p>
+            </div>
+           </div>
+         </div>
+       </div>
+       <div class="col introduction">
+       <div class="name-title">
+        <h2 class="form-header">紹介文</h2>
         </div>
-      </div>
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2 class = "form-header">ユーザコード</h2>
-          <p class="form-info">hideyasu</p>
+        <div class="introduction-input">
+          <textarea class="border" rows="10" cols="60"></textarea>  
         </div>
-      </div>
-      <div class = "form-cat">
-        <div class = "form-icon-item">
-          <h2 class = "form-header">アイコン</h2>
+       </div>
+        <div class="info page-move">
+         <input type="button" value="プロフィールを編集する" class="prof-move">
         </div>
-        <div class = "form-icon">
-          <div class = "img"></div>
-        </div>
-      </div>
-      <div class = "form-cat">
-        <div class = "form-item">
-          <h2 class = "form-header">紹介文</h2>
-        </div>
-        <p class="form-info">でぶ</p>
-      </div>
-      <div class="form-page-move">
-        <button type="button">プロフィール編集</button>
-      </div>
-    </div>
-    <div class="register-fav">
+    </div>  
+    <div class="col register-fav">
       <h2 class="form-header">お気に入りタグ</h2>
-      <div class="form-fav-tag">
-        <p>タグ</p>
-        <p>タグ</p>
-        <p>タグ</p>
+          <div class="candidate-tag-list">
+             <wbr>
+             <input  type="checkbox" checked id="checkbox01" />
+             <label for="checkbox01" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <wbr>
+             <input  type="checkbox" checked id="checkbox02" />
+             <label for="checkbox02" class="checkbox">説明説明</label>
+             <wbr>
+             <input  type="checkbox" checked id="checkbox03" />
+             <label for="checkbox03" class="checkbox">説明説明説明説明明説明説明</label>
       </div>
-      <div class="form-page-move">
-      <button type="button">お気に入りタグ編集</button>
+        <div class="info page-move">
+         <input type="button" value="お気に入りタグを編集する" class="tag-move">
       </div>
-    </div>
-    <div class = "form-cont">
-      <div class = "cont_conf">
-        <button type="button">キャンセル</button>
       </div>
-      <div class = "cont_can">
-        <button type="button">登録</button>
-    </div>
-  </div>
+          <div class="row info">
+         <input type="button" value="キャンセル" class="cancell">
+         <input type="button" value="確認" class="conf">
+         </div>
+      </div>
 </body>
 </html>

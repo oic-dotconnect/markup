@@ -100,3 +100,17 @@ input[type=checkbox]:checked + .checkbox:before {
 input[type=checkbox]{
  display: none; 
 }
+
+label.checkbox:hover {
+    color:#f6f7f8;
+    background-color:black; 
+}
+
+.search-form-input {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}

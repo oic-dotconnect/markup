@@ -57,9 +57,8 @@
 }
 
 .register-form .form-input{
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 10px;
     padding: 5px 5px;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -71,16 +70,16 @@
 }
 
 .introduction-input textarea{
-    width: 80%;
-    margin-left: 10px;
+    width: 100%;
     padding: 5px 5px;
     font-size: 1.2rem;
     border-radius: 5px;
 }
+
 .info{
-  margin-top: 20px;
-  display: flex;
-  justify-content:space-between;;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info input{
@@ -137,7 +136,6 @@
 
 
 .row{
-  margin-top: 20px;
 }
 
 .register-form h2
@@ -153,6 +151,7 @@
     justify-content: space-between;  
     align-items: center;
 }
+
 
 .item{
     flex: 2;
@@ -191,4 +190,49 @@
 
 .fa-arrow-right:before {
 content: "\f061";
+}
+
+.checkbox {
+  margin:10px 10px 0 0;
+  display: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block;
+  padding: 12px 12px 12px 42px;
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox:before {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  display: block;
+  margin-top: -7px;
+  width: 5px;
+  height: 9px;
+  border-right: 3px solid #53b300;
+  border-bottom: 3px solid #53b300;
+  content: '';
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type=checkbox]:checked + .checkbox:before {
+  opacity: 1;
+}
+
+input[type=checkbox]{
+ display: none; 
+}
+
+label.checkbox:hover {
+    color:#f6f7f8;
+    background-color:black; 
 }

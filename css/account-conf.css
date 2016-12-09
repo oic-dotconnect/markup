@@ -2,13 +2,27 @@
   margin-bottom: 10px;
 }
 
-.register-fav {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-    box-shadow: 0px 0px 6px 1px #e6e6e6;
+.register-conf
+{
+    margin-top: 0; 
+  border-radius: 5px;
+  padding:30px 50px ;
 }
+
+.register-prof{
+    margin-top: 0;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+
+.register-fav{
+    margin-top: 10px;
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+
 .form-item{
     display: flex;
     flex-direction: column;
@@ -18,11 +32,6 @@
 .form-item p{
   color: black;
   font-size: 1rem;
-}
-
-.form-page-move{
-  display: flex;
-  justify-content: flex-end;
 }
 
 .form-fav-tag p{
@@ -37,5 +46,31 @@
 }
 
 .conf-messege{
-  margin-left: 10px;
+}
+
+.page-move{
+  margin-top: 40px;
+  margin-left: auto;
+  padding: 0 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-between;;
+}
+
+.prof-move{
+  width: 300px;
+  background-color: #0097DB;
+}
+
+.tag-move{
+  width: 300px;
+  background-color: #009140;
+}
+
+.input-info{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
