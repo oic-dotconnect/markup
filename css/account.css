@@ -1,6 +1,5 @@
 .register-form{
   margin-top: 0; 
-  box-shadow: 0px 0px 6px 1px #e6e6e6;
   border-radius: 5px;
   padding:30px 50px ;
 }
@@ -109,14 +108,14 @@
 }
 
 .user-name .name-title{
-  border-color: #B7AA00;
+  border-color: #A40000;
 }
 
 .user-code .name-title{
-  border-color: #007130;
+  border-color: #A40000;
 }
 .introduction .name-title{
-  border-color: #004986;
+  border-color: #A40000;
 }
 
 .conf {

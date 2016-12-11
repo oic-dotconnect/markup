@@ -1,5 +1,7 @@
 .register-form .search{
   margin: 20px 20px 0 20px;
+  display: flex;
+  align-items: baseline;
 }
 
 .register-form .mark{
@@ -34,7 +36,7 @@
 }
 
 .candidate-title .name-title {
-  border-color: #AC6A00;
+  border-color: #B7AA00;
 }
 .selection-title .name-title {
   border-color: #B7AA00;
@@ -44,7 +46,7 @@
   margin: 10px 10px 0 10px;
   box-shadow: 0px 0px 6px 1px #e6e6e6;
   border-radius: 5px;
-  padding:10px 30px 20px 30px;
+  padding:20px 30px;
 }
 .candidate-tag-list{
   padding-left:10px;
@@ -102,8 +104,8 @@ input[type=checkbox]{
 }
 
 label.checkbox:hover {
-    color:#f6f7f8;
-    background-color:black; 
+    color:black;
+    background-color:#DDDDDD; 
 }
 
 .search-form-input {
@@ -114,3 +116,4 @@ label.checkbox:hover {
     font-size: 1.2rem;
     border-radius: 5px;
 }
+
