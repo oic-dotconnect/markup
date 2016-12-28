@@ -8,264 +8,305 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="./css/common.css" rel="stylesheet">
-    <link href="./font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./css/event-detail.css" rel="stylesheet">
+    <link type="text/css" href="css/account.css">
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="top">
-            <h1>イベント詳細</h1>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
         </div>
-        <!-- div.top -->
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+    <div class="wrapper">
+      <div class="event-box">
         <div class="primary">
-            <div class="inner">
-                <div class="heading">
-                    <div class="field">
-                        <p>分野</p>
-                    </div>
-                    <!-- div.field -->
+          <div class="inner">
+            <div class="heading">
+              <div class="filed-box">
+                  <div class="field">
+                      <p>デザイン</p>
+                  </div>
+                <!-- div.field -->
+              </div>
+                  <div class="event-detail-header">
                     <div class="title">
                         <p>イベント名</p>
                     </div>
                     <!-- div.title -->
-                </div>
-                <!-- div.heading -->
-                <table class="detail-table table">
-                    <tr class="tag">
-                        <th class="table_title">
-                            <p>タグ</p>
-                        </th>
-                        <!-- th -->
-                        <td class="table_summary">
-                            <p>タグ名</p>
-                            <p>タグ名</p>
-                        </td>
-                        <!-- td -->
-                    </tr>
-                    <!-- tr.tag -->
-                    <tr class="organizer">
-                        <th class="table_title">
-                            <p>主催者</p>
-                        </th>
-                        <!-- th -->
-                        <td class="table_summary">
-                            <div class="person">
-                                <p class="icon"></p>
-                                <p>名前</p>
-                            </div>
-                        </td>
-                        <!-- td -->
-                    </tr>
-                    <!-- tr.organizer -->
-                    <tr class="event-date">
-                        <th class="table_title">
-                            <p>開催日</p>
-                        </th>
-                        <!-- th -->
-                        <td class="table_summary">
-                            <p>日付</p>
-                            <p>-</p>
-                            <p>開始時間</p>
-                            <p>-</p>
-                            <p>終了時間</p>
-                        </td>
-                        <!-- td -->
-                    </tr>
-                    <!-- tr.event-date -->
-                    <tr class="place">
-                        <th class="table_title">
-                            <p>開催教室</p>
-                        </th>
-                        <td class="table_summary">
-                            <p>教室名</p>
-                        </td>
-                    </tr>
-                    <!-- tr.place -->
-                </table>
-                <!-- table.detail-table -->
-                <table class="recruitment-table table">
-                    <tr class="recritment" rowspan="2">
-                        <th class="table_title">
-                            <div class="recritment-title">
-                                <p>募集期間</p>
-                            </div>
-                            <!-- div.recritment-title -->
-                            <div class="none">
-                                <p>&nbsp;</p>
-                            </div>
-                            <!-- div -->
-                        </th>
-                        <!-- th -->
-                        <td class="table_summary">
-                            <div class="recritment-start">
-                                <p>開始日</p>
-                                <p>日付</p>
-                                <p>-</p>
-                                <p>時間</p>
-                            </div>
-                            <!-- div.recritment-end -->
-                            <div class="recritment-end">
-                                <p>終了日</p>
-                                <p>日付</p>
-                                <p>-</p>
-                                <p>時間</p>
-                            </div>
-                            <!-- div.recritment-end -->
-                        </td>
-                        <!-- td -->
-                    </tr>
-                    <!-- tr.recritment -->
-                    <tr class="capacity">
-                        <th class="table_title">
-                            <p>定員</p>
-                        </th>
-                        <!-- th -->
-                        <td class="table_summary">
-                            <p>現在</p>
-                            <p>/</p>
-                            <p>最大</p>
-                            <p>人</p>
-                        </td>
-                        <!-- td -->
-                    </tr>
-                    <!-- tr.capacity -->
-                </table>
-                <!-- table.recruitment-table -->
-                <div class="subscription">
-                    <button type="button">申し込み</button>
-                </div>
-                <!-- div.subscription -->
+                    <div class="tags">
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                      <p class="tag">タグタグタグタグタグタグタグタ</p>
+                    </div>
+                    <!-- div.tags -->
+                  </div>
             </div>
-            <!-- div.detail -->
+            <!-- div.heading -->
+            <table class="event-detail-table table">
+              <tr>
+                <th>
+                <div class="th-box">
+                  <div class="icon-box">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                  </div>
+                  <p>主催者：</p>
+                </div>
+                </th>
+                <td class="td-box">
+                  <div class="icon"><img src="http://placeimg.com/300/300/animals"></div>
+                  <p>名前</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                <div class="th-box">
+                  <div class="icon-box">
+                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  </div>
+                  <p>開催日：</p>
+                </div>
+                </th>
+                <td><p>日付</p></td>
+              </tr>
+              <tr>
+                <th>
+                <div class="th-box">
+                  <div class="icon-box">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <p>開催教室：</p>
+                </div>
+                </th>
+                <td>教室名</td>
+              </tr>
+              <tr>
+                <th>
+                <div class="th-box">
+                  <div class="icon-box">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </div>
+                  <p>募集期間：</p>
+                </div>
+                </th>
+                <td>
+                  <div class="td-box event-start">
+                    <p>開始日</p>
+                    <p>日付</p>
+                    <p>-</p>
+                    <p>時間</p>
+                  </div>
+                  <div class="td-box event-end">
+                      <p>終了日</p>
+                      <p>日付</p>
+                      <p>-</p>
+                      <p>時間</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                <div class="th-box">
+                    <div class="icon-box">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <p>定員：</p>
+                </div>
+                </th>
+                <td>
+                  <div class="td-box">
+                    <p>現在</p>
+                    <p></p>
+                    <p>/</p>
+                    <p>最大</p>
+                    <p></p>
+                    <p>人</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="event-entry">
+              <input type="button" value="申し込み" class="entry-button">
+            </div>
+          </div>
         </div>
-        <!-- div.primary -->
         <div class="secondary">
-            <div class="description">
-                <div id="editor_area" class="group_inner clearfix">
-                    <h2>もしゃもしゃ会</h2>
-                    <p>Webデザインをテーマに模写の場を設けて、みんなでもしゃもしゃしよう、という会です。</p>
-                    <p>綺麗なWebデザインの技法を学ぶには、綺麗なWebサイトをとことん模写してみるのが一番!!</p>
-                    <p>デザインの引き出しを増やしたい。 <br> デザインの意図をもっと読み取れるようになりたい。 <br> 模写をして一緒に成長しましょう！ </p>
-                    <p>デザインではなく、プログラムの模写でも構いません。</p>
-                    <p>一つのサイトを皆で模写するのではなく、 各々が模写するサイトを選定して、もくもくやっていく形です。
-                    </p>
-                    <p>お気に入りのサイトや気になるサイトなど、自分でテーマを設定して、 Webデザインの課題学習に取り組んで見ましょう!!
-                    </p>
-                    <p>みんなでそれぞれもしゃもしゃした後には、 その日気づいた点など簡単な結果発表などできれば、と考えています。
-                    </p>
-                    <ul>
-                        <li>Webサイトを見ながらPS/AIでカンプを再現してみる</li>
-                        <li>Webサイトを元にHTML/CSSでコードに起こし直して見る。</li>
-                        <li>Webサイトを参考に、Webflowなどのツールを使ってレイアウトを再構築してみる。</li>
-                    </ul>
-                    <p>おしゃれなサイト、気になるサイトを自分の手で真似ながら組み立てていくことで、 何か新しい気づきや発見、勉強になる点などがきっとアルはずです。
-                    </p>
-                    <p>Webデザインが始めて、という方から細部にこだわりたいベテランの方まで お気軽にご参加ください。
-                    </p>
-                    <h2>参加の流れ</h2>
-                    <ol>
-                        <li>参加登録する(お気軽にどうぞ)。</li>
-                        <li>もしゃもしゃしたいサイトを見つけておく(当日までに)。</li>
-                        <li>当日会場に来る(PC等はご持参ください)。</li>
-                        <li>もしゃもしゃする(各自で)。</li>
-                        <li>最後に、感想、気づいた事などを発表(おしまいです)。</li>
-                    </ol>
-                    <h2>会場</h2>
-                    <p>株式会社 TAM さん</p>
-                    <h2>timetable</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th align="right">key</th>
-                                <th align="left">value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td align="right">19:15</td>
-                                <td align="left">開場</td>
-                            </tr>
-                            <tr>
-                                <td align="right">19:30</td>
-                                <td align="left">開始/自己紹介</td>
-                            </tr>
-                            <tr>
-                                <td align="right">21:30</td>
-                                <td align="left">結果発表</td>
-                            </tr>
-                            <tr>
-                                <td align="right">22:00</td>
-                                <td align="left">終了</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>関西フロントエンドUGについて</h2>
-                    <p>関西フロントエンドUGは、関西に巣食うフロントエンドエンジニアのためのコミュニティです。</p>
-                    <p><a href="https://www.facebook.com/groups/kansai.frontend/" rel="nofollow">https://www.facebook.com/groups/kansai.frontend/</a></p>
-                    <p>「最近のWeb制作ってどうなのよ?」をテーマに、エンジニア向け、デザイナー向けのイベントを開催し、 勉強したり話をしたり、飲んだり笑ったりしていこうという会です。</p>
-                    <p>定期的にもくもく会とかセッション会とかやったりしてます。</p>
-                    <p>こんなイベント参加してみたい、こんな話が聞きたいなど、 些細なことでも構わないのでお気軽にイベントのネタとか投げてもらえると助かります!!
-                    </p>
-                    <h2>フロントエンドUGではイベントサポーターの学生を募集しています</h2>
-                    <p>勉強会をやる上で何より参加してもらいたいのは、 これからIT業界に飛び込もうとする学生です。 技術の話や業務の話など色々聞けて、就活前の業務体験としても役立ちます。 ユーザグループでの活動状況等、WebsiteでUpすることもできるので、 就活等での自己アピールにも役立つかも!?
-                    </p>
-                    <p>フロントエンドUGでの各種活動(勉強会告知/企画/買い出し等)に協力してもらえる学生さんは、 是非、
-                        <a href="https://twitter.com/frontkansai" rel="nofollow">@frontkansai</a>までご連絡ください。</p>
-                    <h3>学生サポータ特典</h3>
-                    <ul>
-                        <li>ユーザグループ内での活動実績ポートフォリオサイトへの掲出</li>
-                        <li>各種勉強会への優先参加(スタッフとして)</li>
-                        <li>LT、セッション等、登壇したいというケースの資料作成サポート等</li>
-                    </ul>
-                </div>
+          <div  class="description">
+            <h2>もしゃもしゃ会</h2>
+            <div class="sentence">
+              <p>Webデザインをテーマに模写の場を設けて、みんなでもしゃもしゃしよう、という会です。</p>
+              <p>綺麗なWebデザインの技法を学ぶには、綺麗なWebサイトをとことん模写してみるのが一番!!</p>
+              <p>デザインの引き出しを増やしたい。 <br> デザインの意図をもっと読み取れるようになりたい。 <br> 模写をして一緒に成長しましょう！ </p>
+              <p>デザインではなく、プログラムの模写でも構いません。</p>
+              <p>一つのサイトを皆で模写するのではなく、 各々が模写するサイトを選定して、もくもくやっていく形です。
+              </p>
+              <p>お気に入りのサイトや気になるサイトなど、自分でテーマを設定して、 Webデザインの課題学習に取り組んで見ましょう!!
+              </p>
+              <p>みんなでそれぞれもしゃもしゃした後には、 その日気づいた点など簡単な結果発表などできれば、と考えています。
+              </p>
+              <ul>
+                <li>Webサイトを見ながらPS/AIでカンプを再現してみる</li>
+                <li>Webサイトを元にHTML/CSSでコードに起こし直して見る。</li>
+                <li>Webサイトを参考に、Webflowなどのツールを使ってレイアウトを再構築してみる。</li>
+              </ul>
+              <p>おしゃれなサイト、気になるサイトを自分の手で真似ながら組み立てていくことで、 何か新しい気づきや発見、勉強になる点などがきっとアルはずです。
+              </p>
+              <p>Webデザインが始めて、という方から細部にこだわりたいベテランの方まで お気軽にご参加ください。
+              </p>
             </div>
-            <!-- div.description -->
-            <div class="person-group">
-                <div class="participant">
-                    <div class="participant-title">
-                        <p class="list-title">参加者一覧</p>
-                        <p class="amount">人数</p>
-                    </div>
-                    <!-- div.participant -->
-                    <div class="participant-list">
-                        <div class="person">
-                            <p class="icon"></p>
-                            <p>名前</p>
-                        </div>
-                        <!-- div.person -->
-
-                    </div>
-                    <!-- div.participant-list -->
-                    <div class="more">
-                        <i class="fa fa-caret-down fa-2x fa-color" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <!-- div.participant -->
-                <div class="substitate">
-                    <div class="substitate-title">
-                        <p class="list-title">補欠者一覧</p>
-                        <p class="amount">人数</p>
-                    </div>
-                    <!-- div.substitate-title -->
-                    <div class="substitate-list">
-                        <div class="person">
-                            <p class="icon"></p>
-                            <p>名前</p>
-                        </div>
-                        <!-- div.person -->
-                    </div>
-                    <!-- div.substitate-list -->
-                    <div class="more">
-                        <i class="fa fa-caret-down fa-2x fa-color" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <!-- div.substitate -->
+            <h2>参加の流れ</h2>
+            <div class="sentence">
+                <p>参加登録する(お気軽にどうぞ)。</p>
+                <p>もしゃもしゃしたいサイトを見つけておく(当日までに)。</p>
+                <p>当日会場に来る(PC等はご持参ください)。</p>
+                <p>もしゃもしゃする(各自で)。</p>
+                <p>最後に、感想、気づいた事などを発表(おしまいです)。</p>
+              </ol>
             </div>
-            <!-- div.person-group -->
+            <h2>会場</h2>
+            <div class="sentence">
+              <p>株式会社 TAM さん</p>
+            </div>
+            <h2>timetable</h2>
+            <div class="sentence">
+              <table>
+                <thead>
+                  <tr>
+                    <th align="right">key</th>
+                    <th align="left">value</th>
+                  </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td align="right">19:15</td>
+                  <td align="left">開場</td>
+                </tr>
+                <tr>
+                  <td align="right">19:30</td>
+                  <td align="left">開始/自己紹介</td>
+                </tr>
+                <tr>
+                  <td align="right">21:30</td>
+                  <td align="left">結果発表</td>
+                </tr>
+                <tr>
+                  <td align="right">22:00</td>
+                  <td align="left">終了</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <h2>関西フロントエンドUGについて</h2>
+            <div class="sentence">
+              <p>関西フロントエンドUGは、関西に巣食うフロントエンドエンジニアのためのコミュニティです。</p>
+              <p><a href="https://www.facebook.com/groups/kansai.frontend/" rel="nofollow">https://www.facebook.com/groups/kansai.frontend/</a></p>
+              <p>「最近のWeb制作ってどうなのよ?」をテーマに、エンジニア向け、デザイナー向けのイベントを開催し、 勉強したり話をしたり、飲んだり笑ったりしていこうという会です。</p>
+              <p>定期的にもくもく会とかセッション会とかやったりしてます。</p>
+              <p>こんなイベント参加してみたい、こんな話が聞きたいなど、 些細なことでも構わないのでお気軽にイベントのネタとか投げてもらえると助かります!!
+              </p>
+            </div>
+            <h2>フロントエンドUGではイベントサポーターの学生を募集しています</h2>
+            <div class="sentence">
+              <p>勉強会をやる上で何より参加してもらいたいのは、 これからIT業界に飛び込もうとする学生です。 技術の話や業務の話など色々聞けて、就活前の業務体験としても役立ちます。 ユーザグループでの活動状況等、WebsiteでUpすることもできるので、 就活等での自己アピールにも役立つかも!?
+              </p>
+              <p>フロントエンドUGでの各種活動(勉強会告知/企画/買い出し等)に協力してもらえる学生さんは、 是非、
+              <a href="https://twitter.com/frontkansai" rel="nofollow">@frontkansai</a>までご連絡ください。</p>
+              <h3>学生サポータ特典</h3>
+                <ul>
+                <li>ユーザグループ内での活動実績ポートフォリオサイトへの掲出</li>
+                <li>各種勉強会への優先参加(スタッフとして)</li>
+                <li>LT、セッション等、登壇したいというケースの資料作成サポート等</li>
+                </ul>
+            </div>
+          </div>
+          <!-- div.description -->
+          <div class="user-group">
+            <div class="participant">
+              <div class="participant-title">
+                <p class="list-title">参加者一覧</p>
+                  <p class="amount">人数</p>
+              </div>
+              <!-- div.participant -->
+              <div class="participant-list">
+                <div class="user">
+                  <p class="icon"><img src="http://placeimg.com/300/300/animals"></p>
+                  <p>名前</p>
+                </div>
+                <!-- div.user -->
+                <div class="user">
+                  <p class="icon"><img src="http://placeimg.com/300/300/animals"></p>
+                  <p>名前</p>
+                </div>
+                <!-- div.user -->
+                <div class="user">
+                  <p class="icon"><img src="http://placeimg.com/300/300/animals"></p>
+                  <p>名前</p>
+                </div>
+                <!-- div.user -->
+              </div>
+              <!-- div.participant-list -->
+              <div class="more">
+                <i class="fa fa-caret-down fa-2x fa-color" aria-hidden="true"></i>
+              </div>
+            </div>
+            <!-- div.participant -->
+            <div class="substitate">
+              <div class="substitate-title">
+                <p class="list-title">補欠者一覧</p>
+                  <p class="amount">人数</p>
+              </div>
+              <!-- div.substitate-title -->
+              <div class="substitate-list">
+                <div class="user">
+                  <p class="icon"><img src="http://placeimg.com/300/300/animals"></p>
+                  <p>名前</p>
+                </div>
+                <!-- div.user -->
+                <div class="user">
+                  <p class="icon"><img src="http://placeimg.com/300/300/animals"></p>
+                  <p>名前</p>
+                </div>
+                <!-- div.user -->
+              </div>
+              <!-- div.substitate-list -->
+              <div class="more">
+                <i class="fa fa-caret-down fa-2x fa-color" aria-hidden="true"></i>
+              </div>
+            </div>
+            <!-- div.substitate -->
+          </div>
+          <!-- div.user-group -->
         </div>
         <!-- div.secondary -->
+      </div>
+      <!-- div.eventbox -->
     </div>
     <!-- div.wrapper -->
 </body>

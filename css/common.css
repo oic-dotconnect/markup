@@ -150,6 +150,17 @@ h2.form-header {
     font-size: 1.3rem;
 }
 
+/*header*/
+h1.header{
+    margin:  0;
+    font-size:  1.6rem;
+}
+
+h2.header {
+    margin:10px 0 0 0;
+    padding-left: 5px;
+    font-size: 1.3rem;
+}
 
 /* tableの設定 */
 

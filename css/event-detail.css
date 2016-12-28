@@ -1,214 +1,230 @@
-/* イベント詳細 */
-
-.icon {
-    width: 35px;
-    height: 35px;
-    background: red;
+/*大枠*/
+.event-box{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+}
+.primary{
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+    box-shadow: 0 0 0 0;
+}
+.secondary{
+    width: 100%;
+    margin-top: 30px;
 }
 
 
-/* 分野　イベント名 */
+/*共通*/
+.icon img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px #d3d3d3;
+}
 
+
+/* 分野 イベント名 タグ*/
 .heading {
     display: flex;
     width: 100%;
     flex-direction: row;
     box-sizing: border-box;
 }
+.inner{
+    margin: 0;
+}
 
+.filed-box{
+    margin-bottom: 10px;
+}
 .field {
     display: flex;
-    width: calc(20vmin - 60px);
-    height: calc(15vmin - 60px);
-    margin: auto;
-    background: indianred;
     align-items: center;
+    background-color: #C7000B;
+    border-radius: 5px;
+    width: 107px;
+    height: 107px;
 }
 
 .field p {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    color: #fff;
     text-align: center;
 }
 
+
+.event-detail-header{
+    padding: 0;
+    padding-left: 15px;
+}
 .title {
     width: 100%;
-    padding: 0 40px;
 }
-
 .title p {
     margin: 0;
     font-size: 2.4rem;
 }
-
-
-/* 募集内容 */
-
-.recruitment-table {
-    margin-top: 50px;
+.tags p {
+    font-size: 10px;
+}
+.tag {
+    margin: 10px 5px 0 0;
+    display: none;
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #f6f7f8;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-.recritment-title {
-    overflow: hidden;
+
+/*イベント詳細*/
+.event-detail-table{
+    margin-top: 80px;
+    border: solid 1px #eee;
+    border-radius: 5px
 }
-
-.recritment-start,
-.recritment-end {
-    overflow: hidden;
+.table_title p{
+    display: inline-block;
+    font-size: 1rem;
 }
-
-
-/* 申し込みボタン */
-
-.subscription {
+.event-detail-table tr{
+    margin: 0 auto;
+    width:90%;
+    border-bottom: dotted 2px #eee;
+}
+.event-detail-table th{
+    padding: 10px;
+    width:20%;
+}
+.event-detail-table td{
+    padding: 10px;
+    width:80%;
+}
+.event-detail-table .td-box{
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
+}
+.th-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.event-detail-table .icon-box{
+    display: inline-block;
+}
+.event-detail-table th p{
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.subscription button {
-    padding: 10px 70px;
-    margin: 20px 0;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: darkorange;
+.event-entry{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
-
+.event-entry input.entry-button{
+    background: #F6AD3C;
+    color: #fff;
+    width: 30%;
+    height: 50px;
+    padding: 5px 0;
+    border: solid 1px #D28300;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    Word-break: break-all;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s linear; */
+}
+.event-entry input.entry-button:hover{
+    background-color:#F39800;
+}
 
 /* 説明蘭 */
-
 .description {
-    width: 78%;
-    padding: 0 20px;
-    margin: 20px 10px 20px 0;
-    background-color: white;
+    flex: 3;
+    padding: 0px 5px 10px 5px;
+    background-color: #fff;
     box-shadow: 0px 0px 6px 1px #e6e6e6;
 }
+.description h2{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFF9B1;
+    font-weight: 500;
+}
+.description h3{
+    border-bottom: solid 3px #FFF9B1; 
+    margin-bottom: 10px
+}
 
+.description .sentence{
+    padding: 20px;
+}
 
-/* 参加者　補欠者一覧 */
-
-.person-group {
-    display: flex;
-    width: 22%;
-    margin: 20px 0 20px 10px;
+/* 参加者.補欠者一覧 */
+.user-group {
+    flex: 1;
+    margin-left: 15px;
     background-color: white;
-    box-shadow: 0px 0px 6px 1px #e6e6e6;
     flex-direction: column;
     align-self: flex-start;
 }
 
-.person-group .person {
-    border-bottom: 2px dashed #f1f1f1;
-    padding: 0 10px;
+.participant,
+.substitate{
+    box-shadow: 0px 0px 6px 1px #e6e6e6;
+    border-radius: 5px;
 }
 
-.person {
+.user-group .user {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #00873C;
+    padding: 0 10px;
     display: flex;
     width: 100%;
     align-items: center;
     box-sizing: border-box;
 }
-
-.person p {
+.user-group .user p {
     margin-right: 20px
 }
-
 .substitate {
     margin-top: 8px;
 }
-
 .participant-title,
 .substitate-title {
     display: flex;
     padding: 0 10px;
-    background: #f1f1f1;
+    background: #A5D4AD;
     flex-direction: row;
+    font-weight: 500;
+    border-bottom: solid 1px #00873C;
 }
-
-.list-title {
-    font-weight: 600;
-}
-
 .amount {
     margin-left: auto;
 }
-
-
-/* もっとみる */
-
 .more {
+    transition: background-color 0.2s linear;
     display: flex;
     width: 100%;
-    background-color: #DCDCDC;
+    background-color: #69BD83;
     justify-content: center;
+    cursor: pointer;
 }
-
-.fa-color {
-    color: #767676;
-    ;
-}
-
-
-/* 768px以下 */
-
-@media screen and (max-width: 768px) {
-    .field p {
-        font-size: 1.4rem;
-    }
-}
-
-
-/* 568px以下 スマホ */
-
-@media screen and (max-width: 568px) {
-    .none {
-        display: none;
-    }
-    .heading {
-        display: flex;
-        order: 0;
-        flex-direction: column;
-    }
-    .detail-table {
-        order: 2;
-    }
-    .recruitment-table {
-        order: 3;
-    }
-    .subscription {
-        order: 1;
-    }
-    .title {
-        padding: 0;
-    }
-    .title p {
-        font-size: 2rem;
-        font-weight: 500;
-        margin: 10px 0;
-    }
-    .field {
-        width: 100%;
-        height: auto;
-        align-items: flex-start;
-    }
-    .field p {
-        padding: 10px 0;
-        margin: 0;
-        font-size: 1.5rem;
-    }
-    .subscription button {
-        margin: 30px auto 10px;
-    }
-    .description {
-        width: 100%;
-        margin: 20px 0;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-    .person-group {
-        width: 100%;
-        margin: 0;
-        box-sizing: border-box;
-    }
+.more:hover{
+    background-color: #39A869;
 }
