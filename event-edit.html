@@ -1,0 +1,209 @@
+<html lang="ja">
+<head>
+  <title>イベント管理</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <link rel="stylesheet" href="./css/account-edit.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" type="text/css" href="./css/event-edit.css">
+  <link rel="stylesheet" type="text/css" href="./css/favorite-tag1.css">
+  <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+  <div class="wrapper">
+    <div class="col edit-form">
+      <h1 class="header">イベント管理</h1>
+      <div class="event-detail">
+        <div class="row event-title-box">
+          <div class="event-box event-field">
+            <h3 class="name-title">分野</h3>
+            <div class="col event-select">
+              <input type="radio" name="event-filed-item" id="it" value="1" checked="">
+                <label for="it">IT</label>
+                <input type="radio" name="event-filed-item" id="game" value="0">
+                <label for="game">ゲーム</label>
+                <input type="radio" name="event-filed-item" id="design" value="0">
+                <label for="design">デザイン</label>
+                <input type="radio" name="event-filed-item" id="movie" value="0">
+                <label for="movie">映像</label>
+                <input type="radio" name="event-filed-item" id="other" value="0">
+                <label for="other">その他</label>
+            </div>
+          </div>
+          <div class="event-box event-title">
+            <h3 class="name-title">イベント名</h3>
+            <input type="text" id="event-title" class="border form-input" name="name-input">
+          </div>
+        </div>
+        <div class="event-box event-tag">
+          <h3 class="name-title">関連するタグ</h3>
+          <div class="row search">
+            <div class="mark">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="input">
+              <input type="text" class="search-form-input">
+              <input type="button" value="検索" class="search-button">
+            </div>
+          </div>
+          <div class="col list">
+            <div class="col tag-list candidate-title">
+              <h3 class="name-title">
+                検索候補のタグ一覧
+              </h3>
+              <div class="candidate-tag-list">
+                <div class="tag-list-line">
+                 <input  type="checkbox" checked id="checkbox01" />
+                 <label for="checkbox01" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+                 <input  type="checkbox" checked id="checkbox02" />
+                 <label for="checkbox02" class="checkbox">説明説明</label>
+                 <input  type="checkbox" checked id="checkbox03" />
+                 <label for="checkbox03" class="checkbox">説明説明説明説明明説明説明</label>
+                </div>
+              </div>
+            </div>
+            <div class="col tag-list fav-title">
+            <h3 class="name-title">
+              現在選択しているタグ一覧
+            </h3>
+            <div class="fav-tag-list">
+              <div class="tag-list-line">
+               <input  type="checkbox" checked id="checkbox10" />
+               <label for="checkbox13" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+               <input  type="checkbox" checked id="checkbox11" />
+               <label for="checkbox14" class="checkbox">説明説明</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="event-box event-hold-area">
+          <h3 class="name-title">開催教室</h3>
+          <div class="event-select-box">
+              <div class="row event-select event-room">
+              階数：
+                <input type="radio" name="event-floor" id="floor2" value="1" checked="">
+                  <label for="floor2">2</label>
+                  <input type="radio" name="event-floor" id="floor3" value="0">
+                  <label for="floor3">3</label>
+                  <input type="radio" name="event-floor" id="floor4" value="0">
+                  <label for="floor4">4</label>
+                  <input type="radio" name="event-floor" id="floor5" value="0">
+                  <label for="floor5">5</label>
+                  <input type="radio" name="event-floor" id="floor6" value="0">
+                  <label for="floor6">6</label>
+                  <input type="radio" name="event-floor" id="floor7" value="0">
+                  <label for="floor7">7</label>
+                  <input type="radio" name="event-floor" id="floor8" value="0">
+                  <label for="floor8">8</label>
+                  <input type="radio" name="event-floor" id="floor9" value="0">
+                  <label for="floor9">9</label>
+              </div>
+              <div class="row event-select event-room">
+              教室：
+                  <input type="radio" name="event-area" id="area-a" value="1" checked="">
+                  <label for="area-a">A</label>
+                  <input type="radio" name="event-area" id="area-b" value="0">
+                  <label for="area-b">B</label>
+                  <input type="radio" name="event-area" id="area-c" value="0">
+                  <label for="area-c">C</label>
+                  <input type="radio" name="event-area" id="area-d" value="0">
+                  <label for="area-d">D</label>
+              </div>
+              <div class="row event-select event-room">
+              教室タイプ：
+                  <input type="radio" name="event-area-type" id="all-area" value="1" checked="">
+                  <label for="all-area">全て</label>
+                  <input type="radio" name="event-area-type" id="pc-area" value="0">
+                  <label for="pc-area">教室（ＰＣ有）</label>
+                  <input type="radio" name="event-area-type" id="nomal-area" value="0">
+                  <label for="nomal-area">教室（ＰＣ無）</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="event-box event-hold-day">
+            <h3 class="name-title">開催日</h3>
+            <div class="col">
+              <div class="row event-day-box">
+                日付：<input type="text" id="event-month" class="border form-input">月<input type="text" id="event-day" class="border form-input">日
+              </div>
+              <div class="row event-time-box">
+                時間：<input type="text" id="event-hour" class="border form-input">時<input type="text" id="event-minute" class="border form-input">分
+              </div>
+            </div>
+          </div>  
+          <div class="event-box event-recruit-day">
+            <h3 class="name-title">募集期間</h3>
+            <div class="row">
+            <div class="recruit-start">
+            <h5>募集開始</h5>
+            <div class="col">
+              <div class="row event-day-box">
+                日付：<input type="text" id="event-month" class="border form-input">月<input type="text" id="event-day" class="border form-input">日
+              </div>
+              <div class="row event-time-box">
+                時間：<input type="text" id="event-hour" class="border form-input">時<input type="text" id="event-minute" class="border form-input">分
+              </div>
+            </div>
+            </div>
+            <div class="recruit-end">
+              <h5>募集終了</h5>
+              <div class="col">
+              <div class="row event-day-box">
+                日付：<input type="text" id="event-month" class="border form-input">月<input type="text" id="event-day" class="border form-input">日
+              </div>
+              <div class="row event-time-box">
+                時間：<input type="text" id="event-hour" class="border form-input">時<input type="text" id="event-minute" class="border form-input">分
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+                  <div class="event-box event-capacity">
+            <h3 class="name-title">定員</h3>
+            <input type="text" id="event-capacity" class="border form-input">人
+          </div>
+        <div class="event-box event-description">
+          <h3 class="name-title">イベントの説明</h3>
+          <textarea class="border" rows="10" cols="60" name="into"></textarea>
+        </div>
+        <div class="row info">
+        <input type="button" value="キャンセル" class="cancell">
+        <input type="button" value="確認" class="conf">
+       </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 .register-form{
-  margin-top: 0; 
+  margin-top: 0;
+  margin-bottom: 20px; 
   border-radius: 5px;
   padding:30px 50px ;
+
 }
 
 .name-col{       
@@ -34,10 +36,6 @@
     width: 100px;
     padding: 5px 0;
     border-radius: 5px;
-}
-
-.register-form{
-  margin-bottom: 20px;
 }
 
 .col h2 + p{
@@ -86,7 +84,6 @@
   border-radius: 5px;
   color: #FFF;
   padding: 6px;
-  box-shadow: 2px 1px #0075A9;
   letter-spacing: 5px;
   Word-break:break-all;
   font-size: 1rem;

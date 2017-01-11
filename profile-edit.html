@@ -1,11 +1,11 @@
 <html lang="ja"><head>
-  <title>アカウント編集</title>
+  <title>プロフィール編集</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/event-detail.css">
-  <link rel="stylesheet" href="./css/profile-registration.css">
-    <link rel="stylesheet" href="./css/account.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./css/account.css">
   <link rel="stylesheet" href="./css/profile-edit.css">
+  <link rel="stylesheet" href="./css/account-edit.css">
   <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="form-inline" id="header-search">
           <div class="input">
             <input type="text" name="name" value="">
-          </div>
+          </div> 
           <button type="submit" class="button orange">検索</button>
         </div>
       </div>
@@ -35,63 +35,67 @@
       </div>
   </header>
   <div class="wrapper">
-    <div class="inner">
-        <div class="tag-list">
-            <li class="tag-item active"><a href="#" class="active-link">プロフィール設定</a></li>
-            <li class="tag-item"><a href="#">お気に入りタグ設定</a></li>
-            <li class="tag-item"><a href="#">メール通知設定</a></li>
-            <li class="tag-item"><a href="#">退会</a></li>
-        </div>
+    <div class="account-tab">
+        <li class="account-tab-item active">プロフィール設定</a></li>
+        <li class="account-tab-item account-link"><a href="#">お気に入りタグ設定</a></li>
+        <li class="account-tab-item account-link"><a href="#">メール通知設定</a></li>
+        <li class="account-tab-item account-link"><a href="#">退会</a></li>
     </div>
-      <div class="col register-form">
-        <h1 class="header">プロフィール設定</h1>
+    <div class="col edit-form">
+        <h1 class="header">プロフィール</h1>
         <div class="row">
          <div class="col icon-col">
          <div class="name-title">
-          <h2>アイコン</h2>
-         </div>
+            <h2>アイコン</h2>
+          </div>
           <div class="icon-display">
             <img src="http://placeimg.com/300/300/animals" alt="">
           </div>
           <div class="icon-form">
-            <label for="icon-file">
-            ＋  画像を選択
-              <input type="file" id="icon-file" style="display:none;">
-            </label>
+          <label for="icon-file">
+          ＋  画像を選択
+            <input type="file" id="icon-file" style="display:none;">
+          </label>
           </div>
          </div>         
          <div class="col name-col">
            <div class="user-name">
-           <div class="name-title">
-            <h2>ニックネーム</h2>
-           </div>
+            <div class="name-title">
+              <h2>ニックネーム</h2><p>必須</p>
+            </div>
             <div class="name-input">
-              <input type="text" class="border form-input ">
+              <input type="text" class="border form-input" name="name-input">
             </div>
            </div>
            <div class="col user-code">
-           <div class="name-title">
-            <h2>ユーザコード</h2>
-           </div>
+              <div class="name-title">
+                <h2>ユーザコード</h2><p>必須</p>
+              </div>
             <div class="code-input">
-              <p></p>
+              <input type="text" class="border form-input" name="code-input">
+              <div class="caution">
+                <p class="caution-mark">※文言</p>
+                <p class="caution-mark">※文言</p>
+                <p class="caution-mark">※文言</p>   
+              </div>
             </div>
            </div>
          </div>
-        </div>
+       </div>
        <div class="col introduction">
        <div class="name-title">
         <h2>紹介文</h2>
         </div>
         <div class="introduction-input">
-          <textarea rows="10" cols="60" class="border"></textarea>  
+          <textarea class="border" rows="10" cols="60" name="into"></textarea>  
         </div>
        </div>
        <div class="row info">
-         <input type="button" value="キャンセル" class="cancell">
-         <input type="button" value="変更" class="conf">
-       </div>    
+        <input type="button" value="キャンセル" class="cancell">
+        <input type="button" value="確認" class="conf">
+       </div>
       </div>
     </div>
+  </div>
 </body>
 </html>

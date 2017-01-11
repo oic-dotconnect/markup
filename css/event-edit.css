@@ -1,0 +1,132 @@
+.event-box{
+   margin: 10px 10px 0 10px;
+  box-shadow: 0px 0px 6px 1px #e6e6e6;
+  border-radius: 5px;
+  padding:20px 30px;
+}
+.event-title{
+  flex: 3;
+}
+
+.event-hold-day{
+  flex:1
+}
+.event-recruit-day{
+  flex:3
+}
+
+.event-description .name-title {
+  margin-bottom: 20px;
+}
+.event-title .name-title {
+  margin-bottom: 20px;
+}
+.event-capacity .name-title {
+  margin-bottom: 20px;
+}
+
+.event-day-box {
+  align-items: center;
+}
+.event-time-box {
+  align-items: center;
+}
+
+.name-title{
+  border-color: red;
+}
+
+.event-day-box .col{
+  margin-top: 0;
+}
+
+
+.event-select-box{
+  margin-top: 20px ;
+}
+.event-room{
+  align-items: center;
+}
+.event-select input{
+  display: none;
+}
+.event-select label{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #3e4956;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  background-color: #fff;
+}
+.event-select label:before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: #bdc3c7;
+  border-radius: 50%;
+}
+.event-select input[type="radio"]:checked + label:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #879c18;
+}
+label.checkbox{
+  color: black;
+}
+
+input#event-month{
+  margin: 10px;
+  width: 30px;
+}
+input#event-day{
+  margin: 10px;
+  width: 30px;
+}
+input#event-hour{
+  margin: 10px;
+  width: 30px;
+}
+input#event-minute{
+  margin: 10px;
+  width: 30px;
+}
+
+.event-recruit-day .col{
+  margin-top: 0;
+}
+.event-recruit-day h5{
+  margin: 10px 0;
+}
+.recruit-start{
+  flex: 1;
+}
+.recruit-end{
+  flex: 1;
+}
+
+.event-capacity .form-input{
+  width: 50px;
+}
+
+.event-description textarea{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}

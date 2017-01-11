@@ -1,17 +1,17 @@
-.register-form .search{
+.search{
   margin: 20px 20px 0 20px;
   display: flex;
   align-items: baseline;
 }
 
-.register-form .mark{
+.search .mark{
   flex: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.register-form .search-button{
+.search-button{
     border: 1px solid #DDD;
     border-radius: 5px;
     color: #FFF;
@@ -25,12 +25,12 @@
     width: 15%;
 }
 
-.register-form .input{
+.search .input{
   margin-top: 0;
   flex: 8;
 }
 
-.register-form .form-input{
+.search .form-input{
   margin-top: 0;
   margin-right: 10px;
 }
@@ -40,6 +40,9 @@
 }
 .selection-title .name-title {
   border-color: #B7AA00;
+}
+.fav-title .name-title{
+  border-color: #B7AA00; 
 }
 
 .tag-list{

@@ -1,0 +1,124 @@
+<html lang="ja">
+<head>
+  <title>お気に入りタグ編集</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <link rel="stylesheet" href="./css/account-edit.css">
+  <link rel="stylesheet" type="text/css" href="./css/favorite-tag1.css">
+  <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header id="header">
+      <div id="header-left">
+        <span id="logo">.Linker</span>
+      </div>
+      <div id="header-center">
+        <div class="form-inline" id="header-search">
+          <div class="input">
+            <input type="text" name="name" value="">
+          </div>
+          <button type="submit" class="button orange">検索</button>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <a href="#" id="acount">
+          <div class="icon">
+            <img src="http://placehold.it/32x32">
+          </div>
+          <span class="name">山崎好洋</span>
+        </a> -->
+        <a href="#" id="login">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <span>Login</span>
+        </a>
+      </div>
+  </header>
+  <div class = "col wrapper">
+    <div class="account-tab">
+        <li class="account-tab-item account-link"><a href="#">プロフィール設定</a></li>
+        <li class="account-tab-item active">お気に入りタグ設定</a></li>
+        <li class="account-tab-item account-link"><a href="#">メール通知設定</a></li>
+        <li class="account-tab-item account-link"><a href="#">退会</a></li>
+    </div> 
+    <div class = "col edit-form">
+      <h1 class="form-header">お気に入りタグの編集</h1>
+      <div class="row search">
+        <div class="mark">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="input">
+          <input type="text" class="search-form-input">
+          <input type="button" value="検索" class="search-button">
+        </div>
+      </div>
+      <div class="col list">
+        <div class="col tag-list candidate-title">
+          <h3 class="name-title">
+            検索候補のタグ一覧
+          </h3>
+          <div class="candidate-tag-list">
+           <div class="tag-list-line">
+             <input  type="checkbox" checked id="checkbox01" />
+             <label for="checkbox01" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <input  type="checkbox" checked id="checkbox02" />
+             <label for="checkbox02" class="checkbox">説明説明</label>
+             <input  type="checkbox" checked id="checkbox03" />
+             <label for="checkbox03" class="checkbox">説明説明説明説明明説明説明</label>
+            </div>
+           <div class="tag-list-line">
+             <input  type="checkbox" checked id="checkbox04" />
+             <label for="checkbox04" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <input  type="checkbox" checked id="checkbox05" />
+             <label for="checkbox05" class="checkbox">説明説明</label>
+             <input  type="checkbox" checked id="checkbox06" />
+             <label for="checkbox06" class="checkbox">説明説明説明説明明説明説明</label>
+            </div>
+           <div class="tag-list-line">
+             <input  type="checkbox" checked id="checkbox07" />
+             <label for="checkbox07" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <input  type="checkbox" checked id="checkbox08" />
+             <label for="checkbox08" class="checkbox">説明説明</label>
+             <input  type="checkbox" checked id="checkbox09" />
+             <label for="checkbox09" class="checkbox">説明説明説明説明明説明説明</label>
+            </div>
+        </div>
+        </div>
+        <div class="col tag-list selection-title">
+          <h3 class="name-title">
+            お気に入りにするタグ一覧
+          </h3>
+          <div class="selection-tag-list">
+           <div class="tag-list-line">
+             <input  type="checkbox" checked id="checkbox10" />
+             <label for="checkbox10" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <input  type="checkbox" checked id="checkbox11" />
+             <label for="checkbox11" class="checkbox">説明説明</label>
+             <input  type="checkbox" checked id="checkbox12" />
+             <label for="checkbox12" class="checkbox">説明説明説明説明明説明説明</label>
+            </div>
+          </div>
+        </div>
+        <div class="col tag-list fav-title">
+          <h3 class="name-title">
+            現在お気に入りにしているタグ一覧
+          </h3>
+          <div class="fav-tag-list">
+           <div class="tag-list-line">
+             <input  type="checkbox" checked id="checkbox10" />
+             <label for="checkbox13" class="checkbox">説明説明説明説明説明説明説明説明説明説明</label>
+             <input  type="checkbox" checked id="checkbox11" />
+             <label for="checkbox14" class="checkbox">説明説明</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row info">
+        <input type="button" value="キャンセル" class="cancell">
+         <input type="button" value="確認" class="conf">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
